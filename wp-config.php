@@ -37,6 +37,8 @@ define('DB_CHARSET', 'utf8');
 /** Kiểu database collate. Đừng thay đổi nếu không hiểu rõ. */
 define('DB_COLLATE', '');
 
+define('FS_METHOD', 'direct');
+
 /**#@+
  * Khóa xác thực và salt.
  *
