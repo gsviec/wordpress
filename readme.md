@@ -5,4 +5,5 @@ Có khá là nhiều cách cài đặt LAMP để chạy wordpress nhưng tôi k
 docker-compose up -d
 sudo chmod 777  -R wp-content/
 git config core.fileMode false
+
 ```
