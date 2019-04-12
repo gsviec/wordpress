@@ -1,0 +1,279 @@
+/* ==========================================================================
+   CSS ANIMATIONS
+   ========================================================================== */
+   
+	.animation {
+		@include animation-duration(1s);
+		@include animation-fill-mode(both);
+	}
+
+	//tabs
+	@include keyframes(active_tabs) {
+		0% {
+			opacity: 0;    
+			@include transform(translateY(-10px));
+		}
+
+		100% {
+			opacity: 1;     
+			@include transform(translateY(0px));
+		}
+	}
+
+	//buttons
+	@include keyframes(buttons) {
+		0% {
+			background-position: 0 0;    
+		}
+
+		100% {
+			background-position: 0 100px;    
+		}	
+	}
+
+	//slider
+	@include keyframes(active_slide) {
+		0% {
+			opacity: 0;    
+			@include transform(translateY(0px));
+		}
+
+		100% {
+			opacity: 1;     
+			@include transform(translateY(-50%));
+		}
+	}	
+ 
+
+	/* spins for icons */ 
+	.animate-spin:before {
+		@include animation( spin 2s infinite linear );
+		display: inline-block;
+	}
+
+
+	//spin
+	@include keyframes(spin) {
+	  0% {
+	    @include transform(rotate(0deg));
+	  }
+
+	  100% {
+	    @include transform(rotate(359deg));
+	  }
+	} 
+
+	//scaleout
+	@include keyframes(scaleout) { 
+		0% { 
+			@include transform(scale(0.0)); 
+			opacity: 1;
+		} 
+
+	 	100% {
+			@include transform(scale(1.0)); 
+			opacity: 0;
+	  }
+	}
+
+	//width
+	@include keyframes(width) { 
+		0% { 
+			@include transform(scale(0.0));  
+		} 
+
+	 	100% {
+			@include transform(scale(1.0));  
+	  }
+	}
+
+	//shake
+	@include keyframes(shake) { 
+
+		0%, 100% {
+			@include transform( translate3d(0, 0, 0) ) ;
+		}
+
+		10%, 30%, 50%, 70%, 90% {
+			@include transform( translate3d(-5px, 0, 0) ) ;
+		}
+
+		20%, 40%, 60%, 80% {
+			@include transform( translate3d(5px, 0, 0) ) ;
+		}	  
+	}
+ 
+	.shake {
+		@include animation( shake 0.5s 1 linear );
+	}
+
+
+	//pulse
+	@include keyframes(pulse) { 
+
+		from {
+			@include transform(scale3d(1, 1, 1));
+		}
+
+		50% {
+			@include transform(scale3d(1.05, 1.05, 1.05));
+		}
+
+		to {
+			@include transform(scale3d(1, 1, 1));
+		}
+
+	}
+
+	.pulse {
+		@include animation( pulse 0.5s 1 linear );
+	}
+
+
+	//pulse
+	@include keyframes(button) { 
+
+		from {
+			@include transform(scale(1));
+		}
+
+		50% {
+			@include transform(scale(1.1));
+		} 
+
+		to {
+			@include transform(scale(1));
+		}
+	}
+
+
+	//Page loading logo
+	@include keyframes(pageloading) { 
+
+		0%{
+			opacity: 0.3;
+		}
+
+		50% {
+			opacity: 1;
+		} 
+
+		100% {
+			opacity: 0.3;
+		} 
+
+	}
+
+	.pageloading {
+		@include animation( pageloading 4s 1 linear );
+	}
+
+
+	@include keyframes(spin) {
+	  0% { 
+ 			@include transform(rotate(0deg));
+	  }
+	  100% {
+ 			@include transform(rotate(359deg));
+	  }
+	}
+	
+	//
+	// part of -
+	// 
+	// animate.css -http://daneden.me/animate
+	// Version - 3.5.1
+	// Licensed under the MIT license - http://opensource.org/licenses/MIT
+	// 
+	// Copyright (c) 2016 Daniel Eden
+	// 
+
+	.animated {
+	  -webkit-animation-duration: 1s;
+	  animation-duration: 1s;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+
+	@include keyframes(slideInUp) { 
+ 
+		from {
+			@include transform( translate3d(0, 100%, 0) );
+			visibility: visible;
+		}
+
+		to {
+			@include transform( translate3d(0, 0, 0) );
+		}
+	}
+ 
+ 	@include keyframes(slideOutUp) { 
+	  from {
+	  		@include transform( translate3d(0, 0, 0) );
+	  }
+
+	  to {
+	  		@include transform( translate3d(0, -100%, 0) );
+	    	visibility: hidden;
+	  }
+	}
+
+	.slideInUp {
+		@include animation-name(slideInUp);
+	}
+
+	.slideOutUp {
+		@include animation-name(slideOutUp);
+	}
+
+
+
+	@-webkit-keyframes fadeIn {
+	  from {
+	    opacity: 0;
+	  }
+
+	  to {
+	    opacity: 1;
+	  }
+	}
+
+	@keyframes fadeIn {
+	  from {
+	    opacity: 0;
+	  }
+
+	  to {
+	    opacity: 1;
+	  }
+	}
+
+	.fadeIn {
+	  -webkit-animation-name: fadeIn;
+	  animation-name: fadeIn;
+	}
+ 
+ 	@-webkit-keyframes fadeOut {
+	  from {
+	    opacity: 1;
+	  }
+
+	  to {
+	    opacity: 0;
+	  }
+	}
+
+	@keyframes fadeOut {
+	  from {
+	    opacity: 1;
+	  }
+
+	  to {
+	    opacity: 0;
+	  }
+	}
+
+	.fadeOut {
+	  -webkit-animation-name: fadeOut;
+	  animation-name: fadeOut;
+	}

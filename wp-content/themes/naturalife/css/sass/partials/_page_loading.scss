@@ -1,0 +1,87 @@
+/* ==========================================================================
+	PAGE LOADING EFFECT
+	========================================================================== */
+	#loader-wrapper{
+		display: none;
+	}
+
+	.js{
+		
+		#loader-wrapper{
+			display: flex; 
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			top: 0;
+			left: 0; 
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			z-index: 10000;
+
+			&:before {
+				position: fixed;
+				width: 300px;
+				height: 300px;
+				content: ""; 
+				left: 50%;
+				top: 50%; 
+				margin-left: -150px;
+				margin-top: -150px;
+				border-radius: 50%;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+			}
+
+			&:after {
+				content: "";
+				position: fixed;
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				border: 1px solid transparent; 
+				animation: spin .8s linear infinite;
+				left: 50%;
+				top: 50%; 
+				margin-left: -150px;
+				margin-top: -150px;				
+			}
+
+			.loading-logo{   
+				opacity: 0;
+				height: auto;
+				max-width: 300px;
+				max-height: 300px;		
+				transition: opacity .75s ease;		
+				-webkit-backface-visibility: hidden;	
+				z-index: 2;	
+			} 
+		}
+
+		.rt-loading{
+			overflow-y: scroll;
+		}	
+
+		.rt-loading #loader-wrapper{
+			opacity: 1;
+			transition: opacity .75s ease;
+		}
+
+		.rt-loaded #loader-wrapper{
+			opacity: 0;
+			transition: opacity .75s ease, transform 0s ease .65s;		
+			transform: scale(0);	
+		}		
+		
+		.rt-leaving{
+			overflow-x: hidden;
+
+			#container{
+				filter: grayscale(1);
+				opacity: 0.4;
+				transition: filter 1s, opacity 7s;	
+			}
+		}
+
+
+	}

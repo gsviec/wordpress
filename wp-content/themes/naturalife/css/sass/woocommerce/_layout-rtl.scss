@@ -1,0 +1,182 @@
+//
+// woocommerce-layout.scss
+// Applies layout to the default WooCommerce frontend design
+////
+//
+// Imports
+//////
+//
+// Styling begins
+//
+.woocommerce, .woocommerce-page {
+
+	/**
+	 * General layout styles
+	 */
+	.col2-set {
+		.col-1 {
+			float: right; 
+		}
+		.col-2 {
+			float: left; 
+		}
+	}
+
+	/**
+	 * Product page
+	 */
+	div.single-product-div,
+	#content div.single-product-div {
+		div.images {
+			float: right;
+		}
+
+		div.thumbnails {
+			a {
+				float: right;
+				margin-left: 3.8%;
+				margin-right: auto;
+			}
+
+			a.last {
+				margin-left: 0; 
+			}
+		}
+
+		div.summary {
+			float: left;
+		}
+	}
+
+	/**
+	 * Product loops
+	 */
+	ul.products {
+
+		li.product {
+			float: right;
+		}
+
+		li.last {
+			margin-left: 0;
+		}
+	}
+
+	&.columns-1 {
+		ul.products {
+			li.product {
+				margin-left: 0;
+			}
+		}
+	} 
+
+
+	.woocommerce-result-count {
+		float: right;
+	}
+	.woocommerce-ordering {
+		float: left;
+	}
+
+	/**
+	 * Cart page
+	 */
+	table.cart,
+	#content table.cart {
+		td.actions {
+			text-align: left;
+
+			.coupon {
+				float: right;
+			}
+		}
+	}
+
+	.cart-collaterals {
+
+		.related { 
+			float: right;
+		}
+
+		.cross-sells {
+			float: right;
+		}
+
+		.shipping_calculator {
+			clear: left;
+			float: left;
+		}
+
+		.cart_totals {
+			float: left;
+		}
+	}
+
+	/**
+	 * Cart sidebar
+	 */
+	ul.cart_list,
+	ul.product_list_widget {
+		li {
+			@include medialeft();
+		}
+	}
+
+	/**
+	 * Forms
+	 */
+	form {
+		.form-row-first,
+		.form-row-last {
+			float: left;
+		}
+
+		.form-row-last {
+			float: left;
+		}
+	}
+
+	#payment {
+		.wc-terms-and-conditions, .terms {
+			text-align: right;
+			padding: 0 0 0 1em;
+			float:left;
+		}
+		
+	}
+}
+
+.woocommerce-account {
+	.woocommerce-MyAccount-navigation {
+		float: right;
+	}
+
+	.woocommerce-MyAccount-content {
+		float: left;
+	}
+}
+
+/**
+ * RTL styles.
+ */
+.rtl {
+	.woocommerce, .woocommerce-page {
+		.col2-set {
+			.col-1 {
+				float: right;
+			}
+			.col-2 {
+				float: left;
+			}
+		}
+		form {
+			.form-row-first,
+			.form-row-last {
+				float: right;
+			}
+			.form-row-last {
+				float: left;
+			}
+		}
+	}
+}

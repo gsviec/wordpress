@@ -1,0 +1,119 @@
+/*!
+ * 
+ * naturalife Main CSS File
+ * Copyright RT-Themes
+ * http://rtthemes.com
+ * 
+ */
+
+/**
+ * -------------------------------------------------------------------------
+ * 
+ * Table of Contents
+ *
+ * - STRUCTURE
+ * ----- Body  
+ * ----- Main Content Holder & Rows
+ * ----- Sidebars
+ * ----- VC Related Fixes
+ * ----- Header
+ * ----- Sub Page Header Row
+ * ----- Footer
+ * - NAVIGATION
+ * - DESIGN ELEMENTS
+ * ----- Seperated Columns
+ * ----- Grid Borders
+ * ----- Featured Images
+ * ----- Select Box
+ * ----- Parallax Backgrounds
+ * ----- Read More Links
+ * ----- Lists
+ * - PORTFOLIO
+ * - BLOG
+ * ----- Article Box style
+ * ----- Author Info
+ * ----- Search Results
+ * ----- Featured Media Positions
+ * ----- Comments
+ * - TEAM
+ * - SHORTCODES
+ * ---- Content Slider
+ * ---- Timelines
+ * ---- Icon Lists
+ * ---- Dividers
+ * ---- Pricing Tables
+ * ---- Buttons
+ * ---- Toggles ( Accordions )
+ * ---- Tabs
+ * ---- Content Box With Icons
+ * ---- Content Box With Images
+ * ---- Heading Shortcode
+ * ---- Photo Gallery
+ * ---- Highlights
+ * ---- Google Maps
+ * ---- Info Boxes
+ * ---- Counter
+ * ---- Latest News
+ * ---- Quotes
+ * ---- Pullquote
+ * ---- Bullet Lists
+ * ---- Pie Charts
+ * ---- Progress Bars
+ * ---- Text Animation
+ * ---- Countdown
+ * - TYPOGRAPHY
+ * ----- Links
+ * ----- Headings
+ * - ANIMATIONS
+ * - HELPERS
+ * - WIDGETS 
+ * - BREADCRUMB MENU
+ * - PAGINATION
+ * - SOCIAL MEDIA
+ * - CAROUSELS
+ * - TESIMONIALS
+ * - FORMS
+ * ----- Contact Form (native)
+ * ----- Contact Form 7 (plugin)
+ * ----- Gravity Forms (plugin)
+ * - TABLES
+ * - PAGE LOADING EFFECT
+ * - 404 PAGE
+ * - MEDIA QUERIES
+ *  -------------------------------------------------------------------------
+ */
+
+@import "utility/vars";
+
+@charset "UTF-8";
+
+//global imports
+@import "utility/imports";
+
+
+//theme components
+@import "partials/ui_fonts";
+@import "partials/global_structure";
+@import "partials/structure";
+@import "partials/navigation";
+@import "partials/design_elements";
+@import "partials/portfolio"; 
+@import "partials/blog"; 
+@import "partials/team"; 
+@import "partials/shortcodes";
+@import "partials/typography";
+@import "partials/animations";
+@import "partials/helpers";
+@import "partials/widgets";
+@import "partials/breadcrumb_menu";
+@import "partials/pagination";
+@import "partials/social_media";
+@import "partials/carousels";
+@import "partials/testimonials";
+@import "partials/forms"; 
+@import "partials/tables"; 
+@import "partials/top_bar";
+@import "partials/side_panel";
+@import "partials/page_loading"; 
+@import "partials/404_page";
+@import "partials/media_queries"; 

@@ -12,7 +12,7 @@ services:
        MYSQL_USER: gsviec
        MYSQL_PASSWORD: gsviec
      ports:
-       - 3309:3306
+       - 3301:3306
     php:
      depends_on:
        - db

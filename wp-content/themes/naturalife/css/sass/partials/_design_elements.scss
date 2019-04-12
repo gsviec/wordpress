@@ -1,0 +1,962 @@
+/* ==========================================================================
+   DESIGN ELEMENTS
+   ========================================================================== */
+
+/* Photo Gallery
+   ========================================================================== */
+	#container .rt-gallery{
+
+		.col{
+			margin-bottom: floor(($grid-gutter-width));
+			overflow: hidden;
+		}
+		
+		//nogaps
+		&.nogaps{
+
+			&.row, > .row{
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.col{
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		.gallery-item-holder{
+			max-width: 100%;
+			margin: auto;
+
+			.image-thumbnail{
+				margin: auto;
+			}
+
+			img{
+				max-width: 100%; 
+				display: block;
+				margin: auto; 
+			}
+		}  
+
+	}
+
+	.single-post, .single-portfolio{
+		.rt-gallery{
+			.col-sm-12{
+				padding: 0;
+			}		
+		}
+	}
+
+
+	@media screen and (min-width: 768px) {
+		//metro double height img fix
+		#container .rt-gallery .col.double-height:not(.double-width) img { 
+			margin-left: -50%;
+		}
+	}
+
+/* Grid Borders
+   ========================================================================== */
+	.border_grid{
+
+		> .row, .content-row, .elementor-row{
+			border-width: 1px 0 0 0;
+			border-style: solid;
+			margin: 0;
+
+			&:first-child{
+				border-width: 0;
+
+				> div:after {
+					top: 0;
+				}	
+			}
+
+			&:last-child > div:after {
+				bottom: 0; 
+			}
+		} 
+
+		> .row > div, .rt-column-container, .col, .elementor-column{		
+
+			&:first-child:after{
+				border-width: 0;
+			}
+
+			&:after{
+				content: "";
+				position: absolute;
+				left: -1px;
+				top: 0;
+				bottom: 0;
+				width: 1px;
+				z-index: 1;			 
+				border-width: 0 0 0 1px;
+				border-style: solid;						
+			}	
+		}
+
+		> .row > div, .content-row .rt-column-container, .elementor-column{		
+			padding-top: 15px;
+			padding-bottom: 25px;
+
+			&:after{
+				top: 15px;
+				bottom: 15px; 					
+			}			
+		}
+
+		.content-row:first-child .rt-column-container{
+			padding-top: 0px;
+		}
+		
+		.wpb_row, .row{
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+	}
+
+/* Overlay Texts
+   ========================================================================== */
+   .has-overlay{
+		overflow: hidden;
+		display: block;
+		position: relative;
+		margin-left: auto !important;
+		margin-right: auto !important;
+
+
+		.image-thumbnail img{
+			opacity: 1;
+			@include transition( all 0.2s ease-out 0.1s );			
+			will-change: opacity;	
+		}
+
+		.overlay-text {	
+
+			&:after{
+				content: "";
+				@include transition( all 0.2s ease-out 0.1s );	
+				overflow: hidden;
+				position: absolute;
+				top: -100%;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0.8;				
+				z-index: 1;
+			}
+
+			top: 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			padding: 20px;			
+			transform: translate3d(0,0,0); 
+			transform-style: preserve-3d;
+			backface-visibility: hidden;		
+			
+			> p{
+				margin: 5px 0 0;
+				font-size: .85em;
+			}
+
+			*{
+				opacity: 0;
+				color:#fff !important;
+				position: relative;
+				z-index: 2;
+				@include transition( all 0.2s linear 0.3s );	
+			}
+		}
+
+		&:hover{ 
+			img{
+				transform-origin: top;
+				opacity: 0.8;
+			}
+			.overlay-text{
+				opacity: 1;
+
+				*{
+					opacity: 1;
+				}
+			}
+			.overlay-text:after{
+				top: 0;	
+			}
+		}
+   }
+
+	@media screen and (max-width: 768px) {
+		.has-overlay *, .imgeffect *{
+			transition: none !important
+		}
+	}
+
+/* Featured Images
+   ========================================================================== */
+	.featured_image img, .featured_image div{
+		width: 100%;
+	}
+
+	.featured_image{
+		position: relative;
+		overflow: hidden;
+	}
+
+	/* image effect */
+	.imgeffect{
+		position: relative;
+		overflow: hidden;
+		display: block;
+		max-width: 100%; 
+		z-index: 1;		
+
+		img{
+			opacity: 1;
+			@include transition( all 0.2s ease-out 0.1s );	
+			will-change: opacity;
+			backface-visibility: hidden;
+		}
+
+		.action-button {
+			top: 20px;
+			right: 20px;
+			line-height: 2em;
+			width: 2em;
+			height: 2em;
+			position: absolute;
+			text-align: center;		
+			position: absolute;
+			text-align: center; 
+			opacity: 0;
+			@include scale(0);			
+			@include transition(all 0.4s ease-out 0.1s);	
+			z-index: 20;
+			backface-visibility: hidden;
+			transform: translate3d(0,0,0); 
+			transform-style: preserve-3d;			
+			will-change: scale, opacity;
+		}
+ 
+		&:hover{ 
+			img{ 
+				transform-origin: top;
+				opacity: 0.8;
+			}
+
+			.action-button {
+				opacity: 1;
+				@include scale(1);	
+			}	 
+
+		}
+
+		> .action-button:before{
+			font-family: 'rtui';
+			color: #fff;
+			font-size: 16px;
+		}
+
+		&.zoom > .action-button:before{
+			content: "\e800";
+		}
+
+		&.gallery > .action-button:before{
+			content: "\e803";
+		}
+		
+		&.video > .action-button:before{
+			content: "\6a";
+		}
+
+		&.audio > .action-button:before{
+			content: "\e805";
+		}
+
+		&.extlink > .action-button:before{
+			content: "\f08e";
+		}
+
+		&.link > .action-button:before{
+			content: "\e806";
+		}			
+
+		> div > img{
+			display: inline-block;
+		}
+
+		&.aligncenter{
+			display: block;
+		}
+	} 
+
+	// //mobile fix
+	// @media screen and (max-width: 768px) {
+	// 	.touchevents .imgeffect .action-button{  
+	// 		opacity: 1 !important;
+	// 		transform: scale(1) !important;	 
+	// 	}
+	// }
+
+	//image effect with multiple has-overlay
+	.has-overlay + .action-button,
+	.overlay-text  + .action-button{
+		background-color: transparent !important;
+	}
+
+
+	.featured-image-nav{
+		opacity: 0;
+		bottom: -50px;
+		margin: 0;
+		padding: 10px 0 5px;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		background-color: rgba(0,0,0,0.3);
+
+		> li{
+			display: inline-block;
+			cursor: pointer;
+			width: 15px;
+			height: 15px;
+			border: 1px solid rgba(255, 255, 255, 0.30);
+		}
+
+		> li:hover, > li.active{
+			background: rgba(255, 255, 255, 0.15);
+		}		
+	}
+
+	.featured_image:hover .featured-image-nav{
+		@include transition(all 0.3s ease 0s);
+		opacity: 1;
+		bottom: 0;
+	}
+
+/* Custom Select Box
+   ========================================================================== */
+	.hasCustomSelect{
+		z-index: 2;
+		padding-right: 20px;
+	}
+
+	.customselect {
+		//use color border-color;
+		border-width: 1px;
+		border-style: solid;
+		padding: 4px 20px 4px 10px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.customselect .customselectInner:before{
+		content: "\2a";
+		font-family: "rtui";
+		position: absolute;
+		right: 10px;
+	}
+
+/* Special Backgrounds
+   ========================================================================== */
+	.rt-parallax-background{ 
+		background-attachment: scroll;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: 0;
+		backface-visibility: hidden;
+		display: none;
+		width: 100%;
+		height: 100%;
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden; 		
+	}
+
+	.rt-sa-background{ 
+		width: 100%;
+		position: absolute;
+		left: 0;
+		overflow: hidden;
+		z-index: 0;
+	}
+
+	.rt-svg-background{ 
+		width: 100%;
+		position: absolute;
+		left: 0;
+		overflow: hidden;
+		z-index: 0;
+		height: auto;
+
+		&.top{
+			top:-1px;
+		}
+
+		&.bottom{
+			bottom:-1px;
+		}		
+	}
+
+/* Animated Backgrounds
+   ========================================================================== */
+	.rt-background-slider{ 
+		width: 100%;
+		height: 100%;
+		background-attachment: scroll;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: 0;
+		-webkit-transform: translate3d(0);
+		backface-visibility: hidden;
+	}
+ 
+ 	.rt-background-slider > *{
+		opacity: 1;
+ 		@include transform(scale(1)); 
+		@include transition( opacity 0s, transform 0s ) ;		
+ 	}
+
+/* Read More Links
+   ========================================================================== */
+	.read_more{
+		display: block;
+		margin-top: 10px;
+		text-decoration: none;
+	}
+
+	.read_more:before {
+		content: "\2e";
+		display: inline-block;
+		font-family: "rtui";  
+		height: 2.5em;
+		width: 2.5em;
+		text-align: center;
+		color: #fff;
+		margin-right: 10px;
+	    text-indent: 3px;
+	    line-height:calc( 2.5em + 2px );
+	}
+
+	a.read_more:hover:before {
+		text-indent: 10px;
+		@include transition( text-indent 0.3s ) ;	
+	}
+
+/* Lists
+   ========================================================================== */
+	ul,
+	ol {
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}   
+
+/* blockquote
+   ========================================================================== */
+
+	blockquote{
+		margin: 40px 0;
+		font-style: italic; 
+		font-size: 1.25em;
+		border-width: 3px 0;
+		border-style: solid;
+		padding: 40px 0; 
+
+		&:before{
+			content: "\201c";
+			float: left;
+			font-size: 3em;
+			line-height: 1em;
+		}
+
+		&.text-center:before{
+			float: none;
+		}
+
+		p{
+			margin-left: 3em;
+		}
+
+		cite{
+			margin-top: .75em;
+			font-size: .75em; 
+			display: inline-block;
+			width: 100%;
+			font-style: normal;
+			margin-left: 3.75em;
+		}
+
+		cite:before {
+			content: '\2014 \00A0';
+		}
+
+		&.style-2{
+			border-width: 0;
+
+			p,cite{
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+	}
+
+/* image loading effect
+   ========================================================================== */
+	.rt_preloading:after{
+		content: "";
+		opacity: 0;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: rgba(0,0,0,0.5);
+		border-radius: 100%;  
+		//border-width: 1px;
+		//border-style: solid;
+		top:calc(50% - 20px);
+		left:calc(50% - 20px);
+		@include animation(scaleout 1.0s infinite ease-in-out);
+		z-index: 1;
+	}
+
+/* Featured Image
+   ========================================================================== */
+	.rt-featured-image{
+		@include box-shadow(2px 2px 2px rgba(0, 0, 0, 0.08));
+		border-width: 1px;
+		border-style: solid;
+		padding: 20px;	 
+	}
+
+/* Featured Video
+   ========================================================================== */
+	.rt-featured-video{
+		@include box-shadow(2px 2px 2px rgba(0, 0, 0, 0.08));
+		border-width: 1px;
+		border-style: solid;
+		padding: 20px;	 
+	}
+
+/* Featured Map
+   ========================================================================== */
+	.rt-featured-map{
+		@include box-shadow(2px 2px 2px rgba(0, 0, 0, 0.08));
+		border-width: 1px;
+		border-style: solid;
+		padding: 20px;	 
+	}
+
+/* Frame
+   ========================================================================== */
+	.rt-frame{
+		border-width: 1px;
+		border-style: solid;
+		padding: 10px;	 
+	}
+
+/* Shadows
+	========================================================================== */	
+	.shadow{
+		@include box-shadow(2px 2px 2px rgba(0, 0, 0, 0.04));	
+	}
+
+	.rt-column-gaps > div > .shadow > .vc_column-inner{
+		@include box-shadow(2px 2px 2px rgba(0, 0, 0, 0.04));		
+	}
+
+
+	.shadow-2{
+		box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.25);
+	}
+
+	.shadow-3{
+		box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
+	}
+
+	.hover-shadow:hover{
+		box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.25);
+		transition: box-shadow 0.3s ease;	
+	}
+
+	//hover opacity
+	.hover-opacity:hover{
+		opacity: 0.3;
+		transition: opacity 0.3s ease;	
+	}		
+
+/* Boxed
+	========================================================================== */	
+	.boxed{
+		@include box-shadow(2px 2px 2px rgba(0, 0, 0, 0.04));	
+		padding: floor(($rt-grid-gutter-width / 2));	
+	}
+/* Go to top
+   ========================================================================== */
+   .go-to-top{
+		cursor: pointer;
+		position: fixed;
+		right: 10px;
+		bottom: -100px;
+		opacity: 0;
+		z-index: 1;
+		transition: all 1s ease;
+
+		&.visible{
+			opacity: 1;
+			bottom: 10px;			
+		}
+    
+		&:before{
+			vertical-align: middle;
+			font-size: 24px;
+			width: 1.5em;
+			line-height: 1.5em;
+			background-color: rgba(0, 0, 0, 0.4);			
+			color:#fff;
+			border-radius: 50%;
+		}
+
+		&:hover{
+			opacity: 0.7;
+		}
+   }
+
+/* Misc
+   ========================================================================== */
+   /* background pverlay */
+ 	.background-overlay{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+ 	}
+
+	/* borders */	 
+	.border-top{
+		border-top-width: 1px;
+		border-top-style: solid;
+	}
+
+	.border-bottom{
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+	}
+
+	.border-left{
+		border-left-width: 1px;
+		border-left-style: solid;
+	}
+
+	.border-right{
+		border-right-width: 1px;
+		border-right-style: solid;
+	}								
+
+	hr{
+		height: 1px;
+		border: none;
+		background-color: #eee;
+	}
+
+/* Content Overlay
+   ========================================================================== */
+	#content-overlay {
+		background: rgba(0, 0, 0, 0.65);
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		z-index: 490;
+		height: 0;
+		opacity: 0;
+		@include transition(opacity 0.4s ease 0.8s, height 0s ease 1.2s);
+	}
+
+	.rt-menu-over, .naturalife-panel-on{
+		#content-overlay {
+			top: 0;
+			opacity: 1;
+		}   
+	}
+
+	.naturalife-panel-on{
+		#content-overlay { 
+			@include transition(height 0s ease 0s, opacity .4s ease 0s);
+			height: 100%;
+		}
+	}	
+
+	//only for webkit
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		.naturalife-panel-on #main-content{
+			filter: grayscale(1);
+		}
+	}
+
+/* Post Navigation
+   ========================================================================== */
+   .naturalife-post-navigation{
+   		
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	font-size: 0.875em;
+
+   	a{
+		text-decoration: none;		
+		font-weight: bold;
+		display: inline-block;
+
+		&:before{
+			font-family: "rtui"; 		
+			vertical-align: middle;
+		}
+   	}
+
+   	a,a:before{
+		transition: color 0.2s ease-in;   		
+   	}
+
+		> div > *:first-child{
+			text-align: left;
+			
+			a:before{
+				content: "\e8a8"; 
+				float: left;
+				margin-right: 20px;
+			}			
+		}
+
+		> div > *:nth-child(2){
+			text-align: center;
+		}
+
+		> div > *:last-child{
+			text-align: right;
+			
+			a:before{
+				content: "\e8a7"; 
+				float: right;
+				margin-left: 20px;
+			}
+		}		
+
+		.all-posts{
+			font-size: 40px;
+		}
+
+   }
+
+
+/* Icons
+   ========================================================================== */
+	#container .naturalife-icon{
+		border-style: solid;
+		border-color: transparent;
+		line-height: 1em;
+		
+		&:before{
+			display: block !important;
+			margin: 0 !important;
+		}
+
+		&:not(.aligncenter):not(.alignleft):not(.alignright){
+			display: inline-block;	
+		}
+	}
+
+	.elementor-icon .rt-elementor-icon:before{
+		margin: 0 !important;
+		display: block !important;
+		width: 1.3em !important;
+	}
+
+	.elementor-widget-icon-list .rt-elementor-icon{
+		line-height: 1;
+		&:before{
+			margin: 0;
+		}
+	}
+
+
+	.rt-custom-style.elementor-view-framed{
+			.elementor-icon:before {
+				position: absolute;
+				content: ""; 
+				width: calc( 100% - 20px );
+				height: calc( 100% - 20px );
+				left: 10px;
+				top: 10px;
+				z-index: 1;  
+				border-width: 2px;
+				border-style: dashed; 
+			}
+
+			.elementor-icon{
+				position: relative;
+			}
+
+			.elementor-icon .rt-elementor-icon:before { 
+				z-index: 33;  
+			}
+
+			&.elementor-shape-circle{
+				.elementor-icon:before {
+					border-radius: 50%;
+				}
+			}
+	}
+
+	.elementor-column-wrap:hover > * > .rt-custom-style.elementor-shape-circle .elementor-icon:before{
+		animation: spin 5s infinite linear;
+	}
+
+	.rt-custom-style .elementor-icon, .rt-custom-style .elementor-icon:before{
+		transition: all 0.2s linear;
+	}
+
+	.elementor-column-wrap:hover > * > .rt-custom-style.elementor-shape-square .elementor-icon{
+		border-radius: 50%;
+	}
+	.elementor-column-wrap:hover > * > .rt-custom-style.elementor-shape-square .elementor-icon:before{
+		animation: spin 5s infinite linear .2s;
+		border-radius: 50%;
+	}
+
+/* popups
+   ========================================================================== */
+	.rt-popup{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+		background-color: rgba(255, 255, 255, 0.95);
+		display: block;
+		opacity: 0; 
+		@include backface-visibility(hidden); 
+		transition: all 0.3s ease;
+
+		&.active{
+			transition: all 0.3s ease;
+			z-index: 999999;
+			opacity: 1; 
+			pointer-events: auto;
+		}
+	}	 
+	
+	.rt-popup-close{
+		position: absolute;
+		top: 40px;
+		right: 40px; 
+		background: transparent;
+		outline: none !important;
+		border: none;
+		cursor: pointer;
+		z-index: 99;
+		transition: transform .2s;
+
+		&:hover{
+			transform: scale(1.2);
+		}
+	}
+
+	.rt-popup-content-wrapper{
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+		overflow: hidden; 
+	}
+
+	.rt-popup-content{
+		display: block; 
+		position: relative;
+		padding: 10%;
+		max-height: 100%;
+		width: 100%;
+	}
+
+	.ps-scrollbar-y-rail {
+		display: none;
+	}	
+/* popups search
+   ========================================================================== */
+	.rt-popup-search .wp-search-form{
+		font-size: 1.5em; 
+		max-width: 1000px;
+		margin: auto;
+
+		input[type="text"]{
+			border-radius: 0 !important;
+			border-width: 0 0 3px !important; 
+			border-style: dotted !important;
+			padding: 1.6em 0 !important; 
+			background-color: transparent !important;	
+			text-transform: uppercase;	
+			letter-spacing: 2px;
+
+			&:focus{
+				box-shadow: none !important;
+				border-color: var(--primary-color) !important;
+			}
+		}
+
+		span{
+			right: 0;
+
+			&:hover{
+				color: var(--primary-color);
+			}			
+		}			
+	}
+
+
+/* Section Background Text
+   ========================================================================== */
+	.rt-background-text{
+		position: relative;
+		overflow: hidden;
+
+		&:before{
+			position: absolute;
+			font-size: 180px; 
+			line-height: 1;
+			z-index: 0;
+			width: 100%; 
+			opacity: 0.1;
+			text-align: center;
+			letter-spacing: 0.1em;
+			white-space: nowrap;
+		}
+	}
+
+/* Vertical Align ( for child items of flexbox column with 100% height )
+   ========================================================================== */
+	.vertical-align-center{
+
+		.col > *{
+			display: flex;
+			align-items: center;
+			height: 100%;
+		}
+	}
+

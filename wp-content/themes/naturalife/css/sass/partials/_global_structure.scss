@@ -1,0 +1,225 @@
+/* ==========================================================================
+   GLOBAL STRUCTURE
+   ========================================================================== */
+
+/* Body
+   ========================================================================== */
+	body {
+		color: $primary-font-color;  		
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale; 				
+	}
+
+/* Container
+   ========================================================================== */
+	#container {		
+		position: relative; 
+		overflow: hidden;
+ 	}
+ 
+ 	.boxed-body-style #container{		
+		margin: 40px auto; 
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); 
+		overflow: inherit;
+	} 
+
+/* Main Content Holder, Rows, Columns
+   ========================================================================== */ 
+	#main-content{
+		padding: 0;
+		position: relative;
+		@include transition( opacity 0.2s linear 0.2s );
+		opacity: 1;
+		z-index: 1;
+	}
+
+	.boxed-body-style #main-content{
+		overflow: hidden;
+	}
+
+	.page-template-template-blank-page 	#main-content{
+		margin-top: 0 !important;
+	}
+
+	/* content row */
+	.content-row{
+		@include clearfix(); 
+		border-width: 0;
+		border-style: solid;  
+		position: relative;
+		margin: auto;
+	}
+  
+	/* content row wrapper */
+	.content-row-wrapper{
+		width: 100%;
+		padding: 25px 0;
+		margin: auto;
+
+		&.fullwidth {
+			max-width: 96%;
+			width: 96%;
+			padding-left: 2%;
+			padding-right: 2%;
+		}
+
+		//child elements
+		.content-row-wrapper{
+			max-width: 100%;
+
+			&.row{
+				margin-left: -1 * floor(($rt-grid-gutter-width / 2));
+				margin-right: -1 * floor(($rt-grid-gutter-width / 2));
+				width: auto;
+				max-width: inherit;
+			}
+		}
+
+		> .col{
+			padding-left: floor(($rt-grid-gutter-width / 2));
+			padding-right: floor(($rt-grid-gutter-width / 2));
+		}			
+	}
+	
+	.main-content-row > .content-row-wrapper{
+		padding: 50px 0;		
+	}
+
+	//overlay bg colors
+	.has-bg-overlay{
+		position: relative;
+		overflow: hidden;
+	}	
+
+	.has-bg-overlay > .rt-wrapper{
+		position: relative;
+	}
+
+
+/* Sidebars
+   ========================================================================== */
+	.sidebar{
+		> .column-inner{
+			-webkit-transform: translateZ(0);
+			-webkit-transform: translate3d(0,0,0);
+			backface-visibility: hidden;			
+			will-change: position, top, bottom, left;
+		} 
+	}
+
+	@media screen and (min-width: 990px) {
+		.sidebar.right {
+			padding-left: 45px;
+			&:before{
+				left: 0;
+			}
+		}
+
+		.sidebar.left{
+			padding-right: 45px;
+			&:before{
+				right: 0;
+			}
+		}
+	}
+
+/* Contents with sidebars
+   ========================================================================== */
+	.content.left-sidebar{
+		padding-left: 15px; 
+	}
+
+	.content.right-sidebar{
+		padding-right: 15px; 
+	}
+
+	@media screen and (min-width: 992px) {
+		.content.left-sidebar{
+			order: 2;
+		}
+	}
+
+/* Flexbox fixes
+========================================================================== */ 
+//boxed columns
+#footer .column-inner, .boxed.loop, .post-content-wrapper.boxed{
+	height: 100%;
+}
+
+//ie	
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.elementor-section-height-min-height{
+		display: flex;
+		flex-direction:row;
+
+			> .elementor-container{
+				align-items: center;
+				display:flex; 
+				flex: 0 0 100%;
+			}
+	}
+
+	.rt-image-box > .col{
+		flex: 1 1 auto;
+	}	
+
+	.slide-background.default{
+		left: calc( ( 100% - 1260px ) /2 );
+	}
+} 
+
+.ie-vertical-lr{
+	-ms-writing-mode: tb-lr; 
+}
+.ie-horizontal-tb{
+	-ms-writing-mode: lt-tb; 
+}
+@media screen and (max-width: 1024px) {
+	.ie-vertical-lr-tablet{
+		-ms-writing-mode: tb-lr; 
+	}
+	.ie-horizontal-tb-tablet{
+		-ms-writing-mode: lt-tb; 
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	.ie-vertical-lr-mobile{
+		-ms-writing-mode: tb-lr; 
+	}
+	.ie-horizontal-tb-mobile{
+		-ms-writing-mode: lt-tb; 
+	}	
+}
+
+/* Siteorigin Related Fixes
+========================================================================== */ 
+.siteorigin-panels #main-content > .content-row > .content-row-wrapper{
+	padding: 0;
+}
+
+/* Siteorigin Related Fixes
+========================================================================== */ 
+.siteorigin-panels .main-content-row.no-sidebar > .content-row-wrapper{
+	padding: 0;
+}
+
+.wpb-js-composer .main-content-row.no-sidebar > .content-row-wrapper{
+	padding: 0;
+}
+
+/* Elementor Related Fixes
+========================================================================== */ 
+body.elementor-editor-active .elementor-inner {
+	margin-top: 0 !important;
+}
+.elementor-editor-active .elementor-section-wrap >section:first-child > .elementor-element-overlay,
+.elementor-editor-active .elementor-section-wrap >.elementor-add-section:first-child > .elementor-element-overlay
+{
+	top: 25px !important;
+}
+
+.elementor-icon-box-title{
+	margin-top: 0;
+}
+ 

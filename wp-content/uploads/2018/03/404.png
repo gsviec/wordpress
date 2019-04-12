@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--<script src="https://use.typekit.net/jsz8jqo.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>-->
+
+		<link rel="stylesheet" href="https://use.typekit.net/jsz8jqo.css">
+
+<meta charset="utf-8">
+<!-- 
+	Betreut von der Anexia Internetdienstleistungs GmbH / https://www.anexia-it.com
+	
+	 ____ ____ ____ ____ ____ ____
+	||a |||n |||e |||x |||i |||a ||
+	||__|||__|||__|||__|||__|||__||
+	|/__\|/__\|/__\|/__\|/__\|/__\|
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2016 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+<base href="http://www.ece.com/">
+
+
+<meta name="generator" content="TYPO3 CMS">
+
+
+<link rel="stylesheet" type="text/css" href="/typo3temp/compressor/merged-b065f894213e2cc02ba45f1aa33e43c3-9edebdf3cf55e56485f46fc9a2b6cf8f.css?1512385733" media="all">
+<link rel="stylesheet" type="text/css" href="/typo3conf/ext/ece_resources/Resources/Contrib/Mediaelement/build/mediaelementplayer.min.css?1512385602" media="all">
+<link rel="stylesheet" type="text/css" href="/typo3conf/ext/ece_resources/Resources/Public/CSS/styles.css?1512385600" media="all">
+<!--[if lt IE 10]><link rel="stylesheet" type="text/css" href="/typo3conf/ext/ece_resources/Resources/Public/CSS/styles-IE9.css?1512385600" media="all"><![endif]-->
+
+
+
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/jQuery/jquery-2.0.3.js?1512385582" type="text/javascript"></script>
+<!--[if lt IE 9]><script src="/typo3conf/ext/ece_resources/Resources/Contrib/html5shiv/html5.js?1512385582" type="text/javascript"></script><![endif]-->
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/naworkResImg.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/Fancybox2/source/jquery.fancybox.pack.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/Fancybox2/source/helpers/jquery.fancybox-thumbs.js?1512385622" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/Fancybox2/source/helpers/jquery.fancybox-buttons.js?1512385622" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/Mediaelement/build/mediaelement-and-player.min.js?1512385602" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/srcset-polyfill/img.srcset.polyfill.min.js?1512385583" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js?1512385673" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/bootstrap-sass/vendor/assets/javascripts/bootstrap/tooltip.js?1512385673" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/bootstrap-sass/vendor/assets/javascripts/bootstrap/carousel.js?1512385672" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js?1512385673" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/bootstrap-sass/vendor/assets/javascripts/bootstrap/dropdown.js?1512385673" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/bootstrap-sass/vendor/assets/javascripts/bootstrap/transition.js?1512385673" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/ion-rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js?1512385672" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/ChartJs/Chart.js?1512385582" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/spin.js/spin.min.js?1512385583" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/typeahead/dist/typeahead.jquery.js?1512385606" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/naworkMedia.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/naworkScreensize.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/naworkSuggest.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/rowSlider.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/timeline.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/dropdownSelect.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/slick/slick/slick.min.js?1512385605" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/history.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/eceMenu.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/eceMotto.js?1512385601" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Contrib/TouchSwipe/jquery.touchSwipe.min.js?1512385583" type="text/javascript"></script>
+<script src="/typo3conf/ext/ece_resources/Resources/Public/JavaScript/application.js?1512385601" type="text/javascript"></script>
+<script src="/typo3temp/javascript_f188e587dd.js?1481804527" type="text/javascript"></script>
+
+
+<title>ECE Projektmanagement G.m.b.H. & Co. KG - ECE</title> <meta name="robots" content="noodp,index, follow" /><meta name="keywords" content="Homepage ECE" /><meta name="description" content="ECE develops, builds, and manages large commercial properties in the business areas Shopping, Office, Traffic, and Industries." /><link rel="canonical" href="http://www.ece.com/en/" /><link rel="apple-touch-icon"  href="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/iOS/AppIcon60x60.png" /><link rel="apple-touch-icon"  sizes="60x60"  href="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/iOS/AppIcon60x60.png" /><link rel="apple-touch-icon"  sizes="120x120"  href="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/iOS/AppIcon60x60%402x.png" /><link rel="apple-touch-icon"  sizes="76x76"  href="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/iOS/AppIcon76x76.png" /><link rel="apple-touch-icon"  sizes="152x152"  href="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/iOS/AppIcon76x76%402x.png" /><link rel="shortcut icon"  sizes="36x36"  href="http://www.ece.com/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/Android/36.png" /><link rel="shortcut icon"  sizes="48x48"  href="http://www.ece.com/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/Android/48.png" /><link rel="shortcut icon"  sizes="72x72"  href="http://www.ece.com/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/Android/72.png" /><link rel="shortcut icon"  sizes="96x96"  href="http://www.ece.com/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/Android/96.png" /><meta name="http://www.ece.commsapplication-square70x70logo"  content="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/Windows/tiny_70x70.png" /><meta name="http://www.ece.commsapplication-square150x150logo"  content="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/Windows/square_150x150.png" /><meta name="http://www.ece.commsapplication-square310x310logo"  content="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/Windows/large_310x310.png" /><link rel="icon"  type="image/x-icon; charset=binary"  href="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/ece_favicon.ico" /><link rel="shortcut icon"  type="image/x-icon; charset=binary"  href="/typo3conf/ext/ece_resources/Resources/Public/Images/Icons/AppIcons/ece_favicon.ico" /><meta name="google-site-verification" content="F23lKx1gkzcJP7mMPvVKhtM1PhLF1VSsoPBtw428qww" />
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+<div class="pageWrapper">
+	<div class="page">
+		
+
+	<!--[if lt IE 9]>
+	<div class="browserhappy">
+		<p>Sie verwenden eine <strong>nicht aktuelle</strong> Version Ihres Browsers. Bitte <a href="http://browsehappy.com/">updaten Sie Ihren Browser</a>, um diese Seite besser nutzen zu können.</p>
+		<p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	</div>
+	<![endif]-->
+
+	<header id="_top">
+
+		<div class="header-top">
+			<nav id="logo">
+				<img src="/typo3conf/ext/ece_resources/Resources/Public/Images/logo.png" width="95" height="50"   alt="Logo ECE" >
+			</nav>
+			<nav id="nav_search">
+				<form action="/en/search/" method="get" class="form-search"><button type="submit" class="btn btn-default"><span class="icon icon-lens"></span></button><input type="text" name="q" class="form-control suggest-typeahead"  autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" placeholder="Search"  data-suggesturl="/?eID=tx_solr_suggest&id=55"   data-suggestlanguage="1" /><input type="hidden" name="tx_solr[sort]" value="relevance_custom ASC" /></form>
+			</nav>
+			<nav id="nav_lang">
+				<ul class="nav"><li class="sub __menu_collapse __menu_collapse__xs __menu_collapse_full_trigger"><a href="#">EN<i class="icon icon-arrow-strong-down"></i></a><ul><li class=""><a href="http://www.ece.de/">DE</a><li class="active"><a href="/en/">EN</a></li><li class=""><a href="/es/">ES</a><li class=""><a href="/pl/">PL</a><li class=""><a href="/ru/">RU</a><li class=""><a href="/tr/">TR</a></ul></li></ul>
+			</nav>
+			<nav id="nav_motto">
+				<ul><li class="active"><a href="/en/company/organization/business-areas/">We create the urban market places of the future.</a></li><li><a href="/en/company/organization/business-areas/">Shopping&nbsp;&nbsp;|&nbsp; Office&nbsp;&nbsp;|&nbsp; Traffic&nbsp;&nbsp;|&nbsp; Industries</a></li></ul>
+			</nav>
+		</div>
+		<div id="off_canvas_trigger"><a href="#"><i class="icon icon-arrow-strong-left"></i>Menu</a></div>
+		<div id="off_canvas_menu">
+			<div id="off_canvas_exit"><a href="#"><i class="icon icon-close-strong-bullet" /></i>Exit</a></div>
+			<nav id="nav_main">
+				<div class="navbar navbar-ece" role="navigation"><ul class="nav navbar-nav navbar-main"><li class="active"><a href="/en/"><span class="home-link">Home</span></a></li><li class="__menu_flyout __menu_collapse __menu_collapse__xs"><a href="/en/news/">News<span class="menu-caret"></span></a><ul class="flyout-menu"><li><ul><li><a href="/en/news/news/">News</a></li></ul></li><li><ul><li><a href="/en/news/events/">Events</a></li></ul></li><li><ul><li><a href="/en/news/topics/">Topics</a></li></ul></li><li><ul><li><a href="/en/news/interviews/">Interviews</a></li></ul></li></ul></li><li class="__menu_flyout __menu_collapse __menu_collapse__xs"><a href="/en/centers-projects/all-projects/">Centers &amp; Projects<span class="menu-caret"></span></a><ul class="flyout-menu"><li><ul><li><a href="/en/centers-projects/all-projects/">All projects</a></li></ul></li><li><ul><li><a href="/en/centers-projects/shopping-2/">Shopping</a></li></ul></li><li><ul><li><a href="/en/centers-projects/office-traffic-industries-hotel-residential/">Office, Traffic, Industries, Hotel, Residential</a></li></ul></li></ul></li><li class="__menu_flyout __menu_collapse __menu_collapse__xs"><a href="/en/company/facts-and-figures/">Company<span class="menu-caret"></span></a><ul class="flyout-menu"><li><ul><li><a href="/en/company/facts-and-figures/">Facts and figures</a></li><li class="__menu_collapse __menu_collapse__xs"><a href="/en/company/organization/">Organization<span class="menu-caret"></span></a><ul><li><a href="/en/company/organization/business-areas/">Business areas</a></li><li><a href="/en/company/organization/management-board/">Management Board</a></li><li><a href="/en/company/organization/supervisory-board/">Supervisory Board</a></li><li><a href="/en/company/organization/international-local-and-joint-venture-companies/">International local and joint-venture companies</a></li><li><a href="/en/company/organization/ece-subsidiaries/">ECE subsidiaries</a></li><li><a href="/en/company/organization/memberships/">Memberships</a></li></ul></li></ul></li><li><ul><li class="__menu_collapse __menu_collapse__xs"><a href="/en/company/real-estate/">Real estate<span class="menu-caret"></span></a><ul><li><a href="/en/company/real-estate/shopping-centers/">Shopping centers</a></li><li><a href="/en/company/real-estate/office-buildings/">Office buildings</a></li><li><a href="/en/company/real-estate/hotels/">Hotels</a></li><li><a href="/en/company/real-estate/logistics/industry/">Logistics/Industry</a></li><li><a href="/en/company/real-estate/traffic-properties/">Traffic properties</a></li><li><a href="/en/company/real-estate/residential-projects/">Residential projects</a></li><li><a href="/en/company/real-estate/multi-functional-projects/">Multi-functional projects</a></li><li><a href="/en/company/real-estate/other-projects/">Other projects</a></li></ul></li></ul></li><li><ul><li class="__menu_collapse __menu_collapse__xs"><a href="/en/company/services/">Services<span class="menu-caret"></span></a><ul><li><a href="/en/company/services/general-planning/">General planning</a></li><li><a href="/en/company/services/general-contracting/">General contracting</a></li><li><a href="/en/company/services/architecture/">Architecture</a></li><li><a href="/en/company/services/construction-management/">Construction management</a></li><li><a href="/en/company/services/project-development/">Project development</a></li><li><a href="/en/company/services/project-management/">Project management</a></li><li><a href="/en/company/services/marketing-and-sales/">Marketing and sales</a></li><li><a href="/en/company/services/leasing/">Leasing</a></li><li><a href="/en/company/services/refurbishment/">Refurbishment</a></li><li><a href="/en/company/services/center-management/">Center management</a></li><li><a href="/en/company/services/master-planning/">Master planning</a></li><li><a href="/en/company/services/the-otto-family-as-investor/">The Otto family as investor</a></li></ul></li></ul></li><li><ul><li><a href="/en/company/ideas-to-innovations/">Ideas to Innovations</a></li><li class="__menu_collapse __menu_collapse__xs"><a href="/en/company/sustainability/">Sustainability<span class="menu-caret"></span></a><ul><li><a href="/en/company/sustainability/sustainability-strategy/">Sustainability strategy</a></li><li><a href="/en/company/sustainability/sustainability-advisory-board/">Sustainability Advisory Board</a></li><li><a href="/en/company/sustainability/sustainability-in-practice/">Sustainability in practice</a></li></ul></li><li class="__menu_collapse __menu_collapse__xs"><a href="/en/company/values-and-responsibility/">Values and responsibility<span class="menu-caret"></span></a><ul><li><a href="/en/company/values-and-responsibility/our-values/">Our values</a></li><li><a href="/en/company/values-and-responsibility/compliance/">Compliance</a></li><li><a href="/en/company/values-and-responsibility/safety/">Safety</a></li></ul></li><li class="__menu_collapse __menu_collapse__xs"><a href="/en/company/social-commitment/">Social commitment<span class="menu-caret"></span></a><ul><li><a href="/en/company/social-commitment/ece-s-commitment/">ECE's commitment</a></li><li><a href="/en/company/social-commitment/foundations/">Foundations</a></li></ul></li><li><a href="/en/career/">Career at ECE</a></li><li><a href="/en/history/">ECE history</a></li><li><a href="/en/company/awards-and-distinctions/">Awards and distinctions</a></li></ul></li></ul></li></ul><div class="menu-helper-shadow"><div class="shadow-right"></div></div><ul class="nav navbar-nav navbar-customers"><li class="__menu_flyout __menu_collapse __menu_collapse__xs"><a href="/en/tenants/">Tenants<span class="menu-caret"></span></a><ul class="flyout-menu"><li><ul><li class="__menu_collapse __menu_collapse__xs"><a href="/en/tenants/retailer/">Retailer<span class="menu-caret"></span></a><ul><li><a href="/en/tenants/retailer/good-accessibility/">Good accessibility</a></li><li><a href="/en/tenants/retailer/high-footfall/">High footfall</a></li><li><a href="/en/tenants/retailer/management/">Management</a></li><li><a href="/en/tenants/retailer/marketing/">Marketing</a></li><li><a href="/en/tenants/retailer/refurbishment/">Refurbishment</a></li><li><a href="/en/tenants/retailer/tenant-coordination/">Tenant coordination</a></li><li><a href="/en/tenants/retailer/apps/">Apps</a></li><li><a href="/en/tenants/retailer/center-voucher-system/">Center voucher system</a></li><li><a href="/en/tenants/retailer/retail-meeting/">Retail Meeting</a></li><li><a href="/en/tenants/retailer/food-beverages/">Food &amp; beverages</a></li></ul></li></ul></li><li><ul><li class="__menu_collapse __menu_collapse__xs"><a href="/en/tenants/office-leasing/">Office Leasing<span class="menu-caret"></span></a><ul><li><a href="/en/tenants/office-leasing/our-shopping-centers-with-office-space/">Our shopping centers with office space</a></li></ul></li><li class="__menu_collapse __menu_collapse__xs"><a href="/en/ece-retailers/">Retailer Login<span class="menu-caret"></span></a><ul><li><a href="/en/ece-retailers/">Login to the customer portal ECE Retailers.</a></li></ul></li></ul></li><li><ul></ul></li><li><div class="teaser teaser-menu"><section id="c4479" class="csc-default"><section class="nawork_textmedia nawork_textmedia_above nawork_textmedia_flex">
+	
+		
+	<section class="nawork_textmedia_media" style="max-width:270px" >
+	<div class="nawork_textmedia_media_inner">
+		
+
+	
+		<div class="nawork_textmedia_row">
+			
+				
+					
+						
+
+
+
+
+
+
+		
+<figure class="nawork_textmedia_item" style="width:100%;" >
+	
+
+
+
+
+
+
+
+
+
+
+		
+	
+			<img title="ECE for rental partners - photo by Norbert Weidemann" alt="Customer in a shop" src="/fileadmin/_processed_/csm_Fly-Out_Mieterpartner_68e96c4638.jpg" width="270" height="179" />
+		
+
+	
+
+
+
+
+
+
+	
+		
+			
+	
+			
+		
+
+		
+	
+
+
+
+
+
+</figure>
+
+	
+
+					
+				
+			
+		</div>
+	
+
+	</div>
+</section>
+
+
+	
+	
+	
+		<section class="nawork_textmedia_bodytext">
+			<header class="csc-header csc-header-n1"><h3 class="csc-firstHeader">ECE for rental partners</h3></header><p class="bodytext">You are one of our rental partners or want to become one? Here you find information about our services, current projects and the right contact persons.<span class="space-before-more-link"> </span><a href="/en/tenants/" title="ECE for rental partners" class="more-link">more</a></p>
+		</section>
+	
+
+</section>
+</section></div></li></ul></li><li class="__menu_flyout __menu_collapse __menu_collapse__xs"><a href="/en/investors-clients/">Investors &amp; Clients<span class="menu-caret"></span></a><ul class="flyout-menu"><li><ul><li><a href="/en/investors-clients/cooperation-models/">Cooperation Models</a></li></ul></li><li><ul><li><a href="/en/investors-clients/asset-magement-for-investors/">Asset Magement for investors</a></li><li class="__menu_collapse __menu_collapse__xs"><a href="/en/investors-clients/the-otto-family-as-investor/">The Otto family as investor<span class="menu-caret"></span></a><ul><li><a href="/en/investors-clients/the-otto-family-as-investor/the-family-office/">The Family Office</a></li><li><a href="/en/investors-clients/the-otto-family-as-investor/deutsche-euroshop-ag-(des)/">Deutsche Euroshop AG (DES)</a></li><li><a href="/en/investors-clients/the-otto-family-as-investor/the-ece-funds/">The ECE funds</a></li></ul></li></ul></li><li><ul><li class="__menu_collapse __menu_collapse__xs"><a href="/en/investors-clients/shareholdings-in-ece-shopping-centers/">Shareholdings in ECE shopping centers<span class="menu-caret"></span></a><ul><li><a href="/en/investors-clients/shareholdings-in-ece-shopping-centers/who-owns-the-ece-centers/">Who owns the ECE centers?</a></li><li><a href="/en/investors-clients/shareholdings-in-ece-shopping-centers/investment-opportunities-for-individuals/">Investment opportunities for individuals</a></li><li><a href="/en/investors-clients/the-otto-family-as-investor/the-ece-funds/">The ECE funds</a></li></ul></li></ul></li><li><div class="teaser teaser-menu"><section id="c4500" class="csc-default"><section class="nawork_textmedia nawork_textmedia_above nawork_textmedia_flex">
+	
+		
+	<section class="nawork_textmedia_media" style="max-width:270px" >
+	<div class="nawork_textmedia_media_inner">
+		
+
+	
+		<div class="nawork_textmedia_row">
+			
+				
+					
+						
+
+
+
+
+
+
+		
+<figure class="nawork_textmedia_item" style="width:100%;" >
+	
+
+
+
+
+
+
+
+
+
+
+		
+	
+			<img src="/fileadmin/_processed_/csm_TabletHoch_Bild02a_e38b323f77.jpg" width="270" height="183" alt="" />
+		
+
+	
+
+
+
+
+
+
+	
+		
+			
+	
+			
+		
+
+		
+	
+
+
+
+
+
+</figure>
+
+	
+
+					
+				
+			
+		</div>
+	
+
+	</div>
+</section>
+
+
+	
+	
+	
+		<section class="nawork_textmedia_bodytext">
+			<header class="csc-header csc-header-n1"><h3 class="csc-firstHeader">ECE for Investors</h3></header><p class="bodytext">ECE provides a wealth of services, in particular for investors and real estate owners.<span class="space-before-more-link"> </span><a href="/en/investors-clients/" title="ECE for Investors" class="more-link">more</a></p>
+		</section>
+	
+
+</section>
+</section></div></li></ul></li><li class="__menu_flyout __menu_collapse __menu_collapse__xs"><a href="/en/cities/">Cities<span class="menu-caret"></span></a><ul class="flyout-menu"><li><ul><li class="__menu_collapse __menu_collapse__xs"><a href="/en/cities/urban-development-supported-by-centers/">Urban development supported by centers<span class="menu-caret"></span></a><ul><li><a href="/en/cities/urban-development-supported-by-centers/individual-concepts-for-every-city/">Individual concepts for every city</a></li><li><a href="/en/cities/urban-development-supported-by-centers/revitalization-and-modernization/">Revitalization and modernization</a></li><li><a href="/en/cities/urban-development-supported-by-centers/quarter-development/">Quarter development</a></li></ul></li></ul></li><li><ul><li class="__menu_collapse __menu_collapse__xs"><a href="/en/cities/impact-of-centers-on-city-centers/">Impact of centers on city centers<span class="menu-caret"></span></a><ul><li><a href="/en/cities/impact-of-centers-on-city-centers/increase-of-footfall/">Increase of footfall</a></li><li><a href="/en/cities/impact-of-centers-on-city-centers/attractive-retail/">Attractive retail</a></li><li><a href="/en/cities/impact-of-centers-on-city-centers/jobs-and-follow-up-investments/">Jobs and follow-up investments</a></li><li><a href="/en/cities/impact-of-centers-on-city-centers/the-challenge-of-the-online-trade/">The challenge of the online trade</a></li><li><a href="/en/cities/impact-of-centers-on-city-centers/diverse-tenant-mix/">Diverse tenant mix</a></li></ul></li></ul></li><li><ul><li><a href="/en/cities/center-development/">Center development</a></li></ul></li><li><div class="teaser teaser-menu"><section id="c4501" class="csc-default"><section class="nawork_textmedia nawork_textmedia_above nawork_textmedia_flex">
+	
+		
+	<section class="nawork_textmedia_media" style="max-width:270px" >
+	<div class="nawork_textmedia_media_inner">
+		
+
+	
+		<div class="nawork_textmedia_row">
+			
+				
+					
+						
+
+
+
+
+
+
+		
+<figure class="nawork_textmedia_item" style="width:100%;" >
+	
+
+
+
+
+
+
+
+
+
+
+		
+	
+			<img title="ECE for Cities and Municipalitiy - photo by Marcus Schwetasch" alt="Promenade of Rhein-Galerie Ludwigshafen" src="/fileadmin/_processed_/csm_Ludwigshafen_7cc8efad53.jpg" width="270" height="179" />
+		
+
+	
+
+
+
+
+
+
+	
+		
+			
+	
+			
+		
+
+		
+	
+
+
+
+
+
+</figure>
+
+	
+
+					
+				
+			
+		</div>
+	
+
+	</div>
+</section>
+
+
+	
+	
+	
+		<section class="nawork_textmedia_bodytext">
+			<header class="csc-header csc-header-n1"><h3 class="csc-firstHeader">ECE for Cities and Municipality</h3></header><p class="bodytext">For ECE city center and shopping centers are no contradiction or competitors but form part of a whole.<span class="space-before-more-link"> </span><a href="/en/cities/" title="ECE for Cities and Municipality" class="more-link">more</a></p>
+		</section>
+	
+
+</section>
+</section></div></li></ul></li></ul></div>
+			</nav>
+			<div class="nav-func-container">
+				<nav id="nav_func">
+					<ul class="nav"><li><a href="/en/career/">Career</a></li><li><a href="/en/press/">Press</a></li><li><a href="/en/media-center/">Media center</a></li><li><a href="/en/contact/">Contact</a></li></ul>
+				</nav>
+			</div>
+			<div class="nav-meta-container">
+				<nav id="nav_meta">
+					<ul class="nav"><li><a href="/en/data-protection/">Data protection</a></li><li><a href="/en/website-credits/">Website Credits</a></li><li><a href="/en/sitemap/">Sitemap</a></li></ul>
+				</nav>
+			</div>
+		</div>
+
+	</header>
+
+		<section id="content" class="landing_page start_page">
+
+			
+				<div class="content_header_wrapper">
+					<section id="content_header" class="column">
+						<div class="container">
+							<div class="gutter-column">
+								<!-- content.header begin --><section id="c5311" class="csc-default blow-up-media"><section class="nawork_textmedia nawork_textmedia_above nawork_textmedia_cycle"><section class="nawork_textmedia_media" style="max-width:1300px"><div class="nawork_textmedia_media_inner">
+		
+
+<!-- Bootsrap default Carusel -->
+
+
+	<div id="content-carousel-" class="carousel slide" data-ride="carousel">
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+<li data-target="#content-carousel-" data-slide-to="0" class="active">
+						
+				
+					
+							</li>
+<li data-target="#content-carousel-" data-slide-to="1">
+						
+				
+					
+							</li>
+<li data-target="#content-carousel-" data-slide-to="2">
+						
+				
+					
+							</li>
+<li data-target="#content-carousel-" data-slide-to="3">
+						
+				
+					
+							</li>
+<li data-target="#content-carousel-" data-slide-to="4">
+						
+				
+			
+		</li>
+</ol>
+<!-- Wrapper for slides --><div class="carousel-inner">
+			
+				
+					
+							<div class="item active">
+								
+
+
+
+
+
+
+		
+				
+						
+	<a href="/en/centers-projects/shopping/?tx_eceprojects_detail%5Bproject%5D=1176&amp;tx_eceprojects_detail%5Bcontroller%5D=Detail&amp;tx_eceprojects_detail%5Baction%5D=index&amp;cHash=123d2ab88d38f4af52dfaa0e25829b41">
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="Adigeo, Verona" alt="Interior view of Adigeo in Verona" src="/fileadmin/_processed_/csm_Adigeo_Slider_1c8bb3bd40.jpg" width="1300" height="443"><figcaption class="figcaption__overlay"><h3>Shopping</h3>
+<br><h1>Adigeo<span></span>
+</h1>
+			</figcaption></figure></a>
+
+					
+			
+	
+
+							</div>
+						
+				
+					
+							<div class="item">
+								
+
+
+
+
+
+
+		
+				
+						
+	<a href="/en/company/ideas-to-innovations/future-shopping/">
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="Ideas to Innovations: Digital Mall" alt="Ideas to Innovations: Digital Mall" src="/fileadmin/_processed_/csm_Digital_Mall_Slider_en_806d804b76.jpg" width="1300" height="443"><figcaption class="figcaption__overlay"></figcaption></figure></a>
+
+					
+			
+	
+
+							</div>
+						
+				
+					
+							<div class="item">
+								
+
+
+
+
+
+
+		
+				
+						
+	<a href="/en/press/at-your-service/">
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="At your Service" alt="2 women consulting a 3D wayfinder in a shopping center" src="/fileadmin/_processed_/csm_At_your_Service_Slider_4_8a1af212c2.jpg" width="1300" height="443"><figcaption class="figcaption__overlay"><h3>Shopping</h3>
+<br><h1>At your Service<span></span>
+</h1>
+			</figcaption></figure></a>
+
+					
+			
+	
+
+							</div>
+						
+				
+					
+							<div class="item">
+								
+
+
+
+
+
+
+		
+				
+						
+	<a href="/en/centers-projects/shopping/?tx_eceprojects_detail%5Bproject%5D=152&amp;tx_eceprojects_detail%5Bcontroller%5D=Detail&amp;tx_eceprojects_detail%5Baction%5D=index&amp;cHash=ed5174e29d7bbda00595e2553552f99a">
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="Marmara Park Istanbul, photo by Picasa" alt="Marmara Park Istanbul" src="/fileadmin/_processed_/csm_MamaraParkHeader2_4206109531.jpg" width="1300" height="443"><figcaption class="figcaption__overlay"><h3>Shopping</h3>
+<br><h1>Marmara Park<span></span>
+</h1>
+			</figcaption></figure></a>
+
+					
+			
+	
+
+							</div>
+						
+				
+					
+							<div class="item">
+								
+
+
+
+
+
+
+		
+				
+						
+	<a href="/en/centers-projects/office-traffic-industries-hotel-residential-1/?tx_eceprojects_detail%5Bproject%5D=328&amp;tx_eceprojects_detail%5Bcontroller%5D=Detail&amp;tx_eceprojects_detail%5Baction%5D=index&amp;cHash=8e908750e4a67d754899c69cb34ed59e">
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="Intelligent Quarters, Hamburg - © Datenland" alt="Intelligent Quarters in Hamburg" src="/fileadmin/_processed_/csm_Quartier_Panorama_Datenland_f6d24c991a.jpg" width="1300" height="443"><figcaption class="figcaption__overlay"><h3>Office</h3>
+<br><h1>Intelligent Quarters<span></span>
+</h1>
+			</figcaption></figure></a>
+
+					
+			
+	
+
+							</div>
+						
+				
+			
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#content-carousel-" data-slide="prev"><span></span></a>
+		<a class="right carousel-control" href="#content-carousel-" data-slide="next"><span></span></a>
+	</div>
+
+
+	</div>
+</section></section></section><div class="columns">
+<div class="column column-66"><div class="tab-container">
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#c834">News</a></li>
+<li><a data-toggle="tab" href="#c836">Events</a></li>
+</ul>
+<div class="tab-content">
+<div id="c834" class="tabbed-content tab-pane active" data-tabtitle="News"><section id="c833" class="csc-default"><div class="news">
+	
+	
+			
+					
+
+
+
+
+						
+	
+			
+<ul class="media-list news-list-view news-list-view-2">
+<!--
+	=====================
+		Partials/List/ItemDefault.html
+--><li class="media article articletype-0">
+	
+
+	<!-- media -->
+	
+		<!-- fal media preview element -->
+		
+			
+				<a class="media-object left" title="Jon H. Zehner (r.), Chairman of ULI Europe, presenting the honor to Alexander Otto (l.)" href="/en/press/press-releases/details-1/?tx_news_pi1%5Bnews%5D=526&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=703447c4d0f6e1e532e12cbebe754f55">
+					
+						<img title="Jon H. Zehner (r.), Chairman of ULI Europe, presenting the honor to Alexander Otto (l.)" src="/fileadmin/_processed_/csm_Jon_Zehner__re__ueberreicht_Alexander_Otto__li__den_ULI_Life_Trustee_Award_6753e3e4c1.jpg" width="239" height="160" alt=""></a>
+			
+		
+	
+
+	<div class="media-body">
+
+		<!-- date -->
+		<div class="media-date news-list-date">
+			02/23/2018
+			
+		</div>
+
+		<!-- header -->
+		<h3 class="media-heading">
+			<a href="/en/press/press-releases/details-1/?tx_news_pi1%5Bnews%5D=526&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=703447c4d0f6e1e532e12cbebe754f55">
+				Longtime Urban Land Institute Leader Alexander Otto Named ULI Life Trustee
+			</a>
+		</h3>
+
+		
+
+		<!-- teas=ser text -->
+		
+				<p class="bodytext">Longtime Urban Land Institute leader Alexander Otto has been selected by the ULI Governance Committee as a ULI Life Trustee. Alexander Otto officially received this honor, reserved for an elite category of ULI’s most dedicated and respected members, during a special...<span class="space-before-more-link"> </span><a class="more" href="/en/press/press-releases/details-1/?tx_news_pi1%5Bnews%5D=526&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=703447c4d0f6e1e532e12cbebe754f55">more</a></p>
+			
+	</div>
+
+</li>
+
+			
+	
+		
+				<!--
+	=====================
+		Partials/List/ItemHeadline.html
+-->
+<li class="media-short article articletype-0">
+	
+
+	<div class="media-body">
+
+		<!-- date -->
+		<div class="news-list-date">
+			02/15/2018
+			
+		</div>
+
+		<!-- header -->
+		<h3 class="media-heading">
+			<a href="/en/press/press-releases/details-1/?tx_news_pi1%5Bnews%5D=523&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=05f4c9005ad5dd0f6ac55adb66251c6d">
+				New logistics center in Graben near Augsburg
+			</a>
+		</h3>
+	</div>
+
+</li>
+
+			
+	
+		
+				<!--
+	=====================
+		Partials/List/ItemHeadline.html
+-->
+<li class="media-short article articletype-0">
+	
+
+	<div class="media-body">
+
+		<!-- date -->
+		<div class="news-list-date">
+			02/06/2018
+			
+		</div>
+
+		<!-- header -->
+		<h3 class="media-heading">
+			<a href="/en/press/press-releases/details-1/?tx_news_pi1%5Bnews%5D=519&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=6a242d8238fcd1909835d82f5a38d8df">
+				The world's first modular hotel on top of a shopping center is built in Berlin
+			</a>
+		</h3>
+	</div>
+
+</li>
+
+			
+	
+		
+				<!--
+	=====================
+		Partials/List/ItemHeadline.html
+-->
+<li class="media-short article articletype-0">
+	
+
+	<div class="media-body">
+
+		<!-- date -->
+		<div class="news-list-date">
+			01/30/2018
+			
+		</div>
+
+		<!-- header -->
+		<h3 class="media-heading">
+			<a href="/en/press/press-releases/details-1/?tx_news_pi1%5Bnews%5D=517&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=f132225765abaf339386ffc99ebbca07">
+				MyZeil Frankfurt: Spaces at new F&amp;B area “Foodtopia” successfully leased to exciting food concepts
+			</a>
+		</h3>
+	</div>
+
+</li>
+
+			
+	
+</ul>
+</div>
+<a href="/en/news/news/" class="more-link">More news</a></section></div>
+<div id="c836" class="tabbed-content tab-pane" data-tabtitle="Events"><section id="c835" class="csc-default"><div class="news">
+	
+	
+			
+					
+
+
+
+
+						
+	
+			
+<ul class="media-list news-list-view news-list-view-2">
+<!--
+	=====================
+		Partials/List/ItemDefault.html
+--><li class="media article articletype-0">
+	
+
+	<!-- media -->
+	
+		<!-- fal media preview element -->
+		
+			
+				<a class="media-object left" title="Logo MIPIM" href="/en/news/events-2/?tx_news_pi1%5Bnews%5D=164&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=88d255225b1fd21afb819cc06ad6cefd">
+					
+						<img title="Logo MIPIM" alt="Logo MIPIM" src="/fileadmin/_processed_/csm_MIPIM_ab33f7bf82.jpg" width="239" height="151"></a>
+			
+		
+	
+
+	<div class="media-body">
+
+		<!-- date -->
+		<div class="media-date news-list-date">
+			03/13/2018
+			 – 03/16/2018
+		</div>
+
+		<!-- header -->
+		<h3 class="media-heading">
+			<a href="/en/news/events-2/?tx_news_pi1%5Bnews%5D=164&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=88d255225b1fd21afb819cc06ad6cefd">
+				MIPIM 2018 in Cannes
+			</a>
+		</h3>
+
+		
+
+		<!-- teas=ser text -->
+		
+				<p class="bodytext">The leading real estate event for professionals brings together players from all international property sectors, from commercial properties to office buildings and sports halls. ECE will also have a stand at the expo. Our staff is looking forward to your visit!<span class="space-before-more-link"> </span><a class="more" href="/en/news/events-2/?tx_news_pi1%5Bnews%5D=164&amp;tx_news_pi1%5Bcontroller%5D=News&amp;cHash=88d255225b1fd21afb819cc06ad6cefd">more</a></p>
+			
+	</div>
+
+</li>
+
+			
+	
+</ul>
+</div>
+<a href="/en/news/events/" class="more-link">More events</a></section></div>
+</div>
+</div></div>
+<div class="column column-33">
+<nav id="c831" class="csc-default   content-menu content-menu-dropdown"><div class="dropdown">
+	<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+		<span class="dropdown-caret"><span class="icon icon-arrow-strong-down" aria-hidden="true"></span></span>
+		<span class="dropdown-label">Services at a glance</span>
+	</a><ul class="dropdown-menu ">
+<li><a href="/en/company/services/general-planning/" title="The planning of a large real estate property is a highly complex task and requires a high planning ability potential especially regarding the ever-increasing demands to modern architecture, profitability, and sustainability. ">General planning</a></li>
+<li><a href="/en/company/services/general-contracting/" title="ECE offers an all-in-one service for clients from all industries who wish to realize a large property: from finding a location, project development, the project management, and the general planning to leasing and selling the property to an appropriate investor.">General contracting</a></li>
+<li><a href="/en/company/services/architecture/" title="The architecture of the planned and realized properties has been ECE's factor of success for 50 years. Since the company's founding, it has been important at ECE to develop own skills in architecture and design and to acquire a high level of competence. These are important factors for the successful development and the operation of shopping centers and other large-scale properties.">Architecture</a></li>
+<li><a href="/en/company/services/construction-management/" title="The European construction market is extremely complex and subject to constant changes. Again and again it is a particular challenge to accurately predict the investment volume for refurbishment or new constructions of large-scale projects at a very early point in time. ">Construction management</a></li>
+<li><a href="/en/company/services/project-development/" title="Experts for concept design, urban planning, market research, site analysis, general site matters, property and building law, transport matters and site development work hand in hand and in close cooperation with the municipalities to ensure the future success of the property and its neighborhood. ">Project development</a></li>
+<li><a href="/en/company/services/project-management/" title="The project management of ECE is the economic backbone and accompanies the entire planning and construction process. It keeps an eye on the budget and the deadlines and ensures the transparency of all processes.">Project management</a></li>
+<li><a href="/en/company/services/marketing-and-sales/" title="In order to determine the value and the expected return of a real estate property, it is crucial to consider the entire life cycle of a property and to develop a specific sales strategy with regard to the advantages and the USP of a project. ">Marketing and sales</a></li>
+<li><a href="/en/company/services/leasing/" title="ECE does not only provide leasing services for its own shopping centers. This service is also offered to other investors or owners of shopping centers.">Leasing</a></li>
+<li><a href="/en/company/services/refurbishment/" title="Constant modernization, adjustments, and extensions of shopping centers are part of the daily routine to an experience shopping center operator such as ECE.  Only shopping centers which keep pace with the times are will be successful in the long run.  Therefore, ECE revitalizes its shopping galleries at regular intervals and also offers this service to third parties. ">Refurbishment</a></li>
+<li><a href="/en/company/services/center-management/" title="ECE has been managing large commercial properties for decades. As European market leader the company sets new standards in the center management and has a unique know-how of operating and marketing shopping centers.  ECE does not only take over management assignments for company properties but also for third parties.">Center management</a></li>
+<li><a href="/en/company/services/master-planning/" title="A professional masterplan sets the course for the future and long-term development of a location. Location and efficient processes are crucial competitive factors for companies.  ECE advises its clients on how add a competitive edge to their commercial property.">Master planning</a></li>
+<li><a href="/en/company/services/the-otto-family-as-investor/" title="ECE is not only service provider but is also active as investor, sometimes also via third parties. Own developments are thus realized based on the group's financial power, centers are acquired or kept in the portfolio via the ECE Fund or Deutsche Euroshop AG.">The Otto family as investor</a></li>
+</ul>
+</div></nav><section id="c7941" class="csc-default teaser teaser-shadow"><h5>Video</h5>
+<h2>The Shopping Center of the Future</h2>
+<br><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube-nocookie.com/embed/r4XoB3yNYSw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div></section>
+</div>
+</div>
+<section id="c6936" class="csc-default"><div class="socialbar">
+  <span class="socialbar-title">Follow us:</span>
+  <ul class="socialbar-list">
+<li class="socialbar-item">
+      <a target="_blank" href="https://www.linkedin.com/company/ece" class="socialbar-linkedin">
+        <span class="socialbar-icon icon icon-linkedin" aria-hidden="true"></span>
+        <span class="socialbar-label">LinkedIn</span>
+      </a>
+    </li>
+    <li class="socialbar-item">
+      <a target="_blank" href="https://www.xing.com/company/ece" class="socialbar-xing">
+        <span class="socialbar-icon icon icon-xing" aria-hidden="true"></span>
+        <span class="socialbar-label">Xing</span>
+      </a>
+    </li>
+    <li class="socialbar-item">
+      <a target="_blank" href="https://www.kununu.com/de/ece" class="socialbar-kununu">
+        <span class="socialbar-icon icon icon-kununu" aria-hidden="true"></span>
+        <span class="socialbar-label">kununu</span>
+      </a>
+    </li>     
+    <li class="socialbar-item">
+      <a target="_blank" href="https://www.youtube.com/channel/UCPw1utJy3GdoMd31F5vSLdA" class="socialbar-youtube">
+        <span class="socialbar-icon icon icon-youtube" aria-hidden="true"></span>
+        <span class="socialbar-label">YouTube</span>
+      </a>
+    </li>   </ul>
+</div></section><!--  content.header end  -->
+							</div>
+						</div>
+					</section>
+				</div>
+			
+
+			<div class="container">
+				<div class="gutter-column">
+
+					
+	
+
+
+					
+						<section id="content_main" class="column">
+							<!-- content.main begin --><!--TYPO3SEARCH_begin--><div class="columns">
+<div class="column column-50"><section id="c1236" class="csc-default teaser teaser-white"><a href="/en/centers-projects/all-projects/"><section class="nawork_textmedia nawork_textmedia_in_text_left_nowrap nawork_textmedia_flex"><section class="nawork_textmedia_media" style="max-width:270px"><div class="nawork_textmedia_media_inner">
+		
+
+	
+		<div class="nawork_textmedia_row">
+			
+				
+					
+						
+
+
+
+
+
+
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="Map of ECE projects" alt="Map of ECE projects" src="/fileadmin/_processed_/csm_map_ab8de7f54b.png" width="270" height="268"></figure>
+</div>
+	
+
+	</div>
+</section><section class="nawork_textmedia_bodytext"><h3>All projects at a glance</h3>
+<p class="bodytext">ECE develops, builds and manages Shopping centers and commercial properties in the business areas Office, Traffic, and Industries. Here is an overview of our projects.<span class="space-before-more-link"> </span><span class="more-link">more</span></p>
+		</section></section></a></section></div>
+<div class="column column-50"><section id="c1235" class="csc-default teaser teaser-white"><a href="/en/cities/"><section class="nawork_textmedia nawork_textmedia_in_text_left_nowrap nawork_textmedia_flex"><section class="nawork_textmedia_media" style="max-width:270px"><div class="nawork_textmedia_media_inner">
+		
+
+	
+		<div class="nawork_textmedia_row">
+			
+				
+					
+						
+
+
+
+
+
+
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="Partner of the cities" alt="Beach event at Ettlinger Tor in Karlsruhe" src="/fileadmin/_processed_/csm_Fly-Out_Kommunen_b5029e26e6.jpg" width="270" height="180"></figure>
+</div>
+	
+
+	</div>
+</section><section class="nawork_textmedia_bodytext"><h3>Partner of the cities</h3>
+<p class="bodytext"> For ECE the High Street and shopping centers are no contradiction but form part of a whole. This is why the optimal urban integration of our centers is important to us.<span class="space-before-more-link"> </span><span class="more-link">more</span></p>
+		</section></section></a></section></div>
+</div>
+<div class="columns">
+<div class="column column-33"><section id="c997" class="csc-default teaser teaser-white"><a href="/en/company/sustainability/" title="Act responsibly"><section class="nawork_textmedia nawork_textmedia_above nawork_textmedia_fixedAspectRatio"><section class="nawork_textmedia_media" style="max-width:380px"><div class="nawork_textmedia_media_inner">
+		
+
+	
+		<div class="nawork_textmedia_row">
+			
+				
+					
+						
+
+
+
+
+
+
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="Sustainability" alt="Solar collector on center rooftop" src="/fileadmin/_processed_/csm_Nachhaltigkeit_Teaserbild_3a0c1e466b.jpg" width="380" height="257"><figcaption class="figcaption__tag figcaption__tag_grey">
+					Sustainability
+				</figcaption></figure>
+</div>
+	
+
+	</div>
+</section><section class="nawork_textmedia_bodytext"><header class="csc-header csc-header-n1"><h3 class="csc-firstHeader">Act responsibly</h3></header><p class="bodytext">Sustainability has always been an integral component of ECE's company philosophy. The company focuses not on the short-term profit but rather on a long-term approach to remain competitive in the long run.<span class="space-before-more-link"> </span><span class="more-link">more</span></p>
+		</section></section></a></section></div>
+<div class="column column-33"><section id="c6196" class="csc-default teaser teaser-white"><a href="/en/career/" title="Working at ECE"><section class="nawork_textmedia nawork_textmedia_above nawork_textmedia_fixedAspectRatio"><section class="nawork_textmedia_media" style="max-width:380px"><div class="nawork_textmedia_media_inner">
+		
+
+	
+		<div class="nawork_textmedia_row">
+			
+				
+					
+						
+
+
+
+
+
+
+		
+<figure class="nawork_textmedia_item" style="width:100%;"><img title="Working at ECE" alt="Employee in a blue armchair" src="/fileadmin/_processed_/csm_Karriere-Teaser_2f6d559649.jpg" width="380" height="257"><figcaption class="figcaption__tag figcaption__tag_lightgrey">
+					Career
+				</figcaption></figure>
+</div>
+	
+
+	</div>
+</section><section class="nawork_textmedia_bodytext"><header class="csc-header csc-header-n1"><h3 class="csc-firstHeader">Working at ECE</h3></header><p class="bodytext">As an international company we offer numerous interesting projects always providing new challenges and requiring comprehensive know-how in the different fields thanks to their complexity and uniqueness.<span class="space-before-more-link"> </span><span class="more-link">more</span></p>
+		</section></section></a></section></div>
+<div class="column column-33"><section id="c7441" class="csc-default teaser teaser-blue"><a href="/en/company/ideas-to-innovations/" title="Ideas to Innovations"><section class="nawork_textmedia nawork_textmedia_above nawork_textmedia_flex"><section class="nawork_textmedia_media" style="max-width:380px"><div class="nawork_textmedia_media_inner">
+		
+
+	
+		<div class="nawork_textmedia_row">
+			
+				
+					
+						
+
+
+
+
+
+
+		
+<figure class="nawork_textmedia_item" style="width:99.9%;"><img title="Ideas to Innovations" alt="Woman in shopping mall, logo &amp;quot;Ideas to Innovations&amp;quot;" src="/fileadmin/_processed_/csm_Innovation_website_9f51d56321.jpg" width="380" height="256"><figcaption class="figcaption__tag figcaption__tag_grey">
+					Topic
+				</figcaption></figure>
+</div>
+	
+
+	</div>
+</section><section class="nawork_textmedia_bodytext"><header class="csc-header csc-header-n1"><h3 class="csc-firstHeader">Ideas to Innovations</h3></header><p class="bodytext">For more than 50 years, ECE has been developing future solutions that made it European market leader for inner-city shopping centers.<span class="space-before-more-link"> </span><span class="more-link">more <span class="icon icon-arrow-strong-right" aria-hidden="true"></span></span></p>
+		</section></section></a></section></div>
+</div>
+<!--TYPO3SEARCH_end--><!--  content.main end  -->
+						</section>
+					
+
+				</div>
+			</div>
+
+		</section>
+		
+
+	<div class="service-menu fix visible-xs">
+		<div class="container">
+			<a class="print-link" href="javascript:void();" title="print">print</a>
+			<a class="mail-link recommend-page-link" href="javascript:void();" title="mail">mail</a>
+			<a class="top-link" href="javascript:void();" title="to top">to top</a>
+		</div>
+	</div>
+
+	<footer>
+		<nav id="footer" class="container">
+			<div class="gutter-column">
+				<ul class="footer-lvl-1"><li><ul class="footer-lvl-2"><li class="__footer_menu __menu_collapse __menu_collapse__xs active"><a href="/en/">Home</a></li><li class="__footer_menu __menu_collapse __menu_collapse__xs"><a href="/en/news/">News<span class="icon icon-arrow-strong-down visible-xs" aria-hidden="true"></span></a><ul class="footer-lvl-3"><li><a href="/en/news/news/">News</a></li><li><a href="/en/news/events/">Events</a></li><li><a href="/en/news/topics/">Topics</a></li><li><a href="/en/news/interviews/">Interviews</a></li></ul></li><li class="__footer_menu __menu_collapse __menu_collapse__xs"><a href="/en/centers-projects/all-projects/">Centers & Projects<span class="icon icon-arrow-strong-down visible-xs" aria-hidden="true"></span></a><ul class="footer-lvl-3"><li><a href="/en/centers-projects/all-projects/">All projects</a></li><li><a href="/en/centers-projects/shopping-2/">Shopping</a></li><li><a href="/en/centers-projects/office-traffic-industries-hotel-residential/">Office, Traffic, Industries, Hotel, Residential</a></li></ul></li></ul></li><li><ul class="footer-lvl-2"><li class="__footer_menu __menu_collapse __menu_collapse__xs"><a href="/en/company/facts-and-figures/">Company<span class="icon icon-arrow-strong-down visible-xs" aria-hidden="true"></span></a><ul class="footer-lvl-3"><li><a href="/en/company/facts-and-figures/">Facts and figures</a></li><li><a href="/en/company/organization/">Organization</a></li><li><a href="/en/company/real-estate/">Real estate</a></li><li><a href="/en/company/services/">Services</a></li><li><a href="/en/company/ideas-to-innovations/">Ideas to Innovations</a></li><li><a href="/en/company/sustainability/">Sustainability</a></li><li><a href="/en/company/values-and-responsibility/">Values and responsibility</a></li><li><a href="/en/company/social-commitment/">Social commitment</a></li><li><a href="/en/career/">Career at ECE</a></li><li><a href="/en/history/">ECE history</a></li><li><a href="/en/company/awards-and-distinctions/">Awards and distinctions</a></li></ul></li></ul></li><li><ul class="footer-lvl-2"><li class="__footer_menu __menu_collapse __menu_collapse__xs"><a href="/en/tenants/">Tenants<span class="icon icon-arrow-strong-down visible-xs" aria-hidden="true"></span></a><ul class="footer-lvl-3"><li><a href="/en/tenants/retailer/">Retailer</a></li><li><a href="/en/tenants/office-leasing/">Office Leasing</a></li><li><a href="/en/ece-retailers/">Retailer Login</a></li></ul></li><li class="__footer_menu __menu_collapse __menu_collapse__xs"><a href="/en/investors-clients/">Investors & Clients<span class="icon icon-arrow-strong-down visible-xs" aria-hidden="true"></span></a><ul class="footer-lvl-3"><li><a href="/en/investors-clients/cooperation-models/">Cooperation Models</a></li><li><a href="/en/investors-clients/asset-magement-for-investors/">Asset Magement for investors</a></li><li><a href="/en/investors-clients/the-otto-family-as-investor/">The Otto family as investor</a></li><li><a href="/en/investors-clients/shareholdings-in-ece-shopping-centers/">Shareholdings in ECE shopping centers</a></li></ul></li><li class="__footer_menu __menu_collapse __menu_collapse__xs"><a href="/en/cities/">Cities<span class="icon icon-arrow-strong-down visible-xs" aria-hidden="true"></span></a><ul class="footer-lvl-3"><li><a href="/en/cities/urban-development-supported-by-centers/">Urban development supported by centers</a></li><li><a href="/en/cities/impact-of-centers-on-city-centers/">Impact of centers on city centers</a></li><li><a href="/en/cities/center-development/">Center development</a></li></ul></li></ul></li><li><ul class="footer-lvl-2"><li><a href="/en/career-1/">Career</a></li><li><a href="/en/press-1/">Press</a></li><li><a href="/en/data-protection/">Data protection</a></li><li><a href="/en/website-credits/">Website credits</a></li><li><a href="/en/sitemap/">Sitemap</a></li></ul></li></ul>
+			</div>
+		</nav>
+		<div id="contact" class="container">
+			<ul><li><a href="/en/contact/" class="bold">ECE Projektmanagement G.m.b.H. & Co. KG</a></li><li><a href="/en/contact/">Heegbarg 30</a></li><li><a href="/en/contact/">22391 Hamburg</a></li><li><a href="tel:+4940606060" class="phone-link">+49 40 60606-0</a></li><li><a href="/en/contact/form/contact-form/" class="contact-link">Contact form</a></li></ul>
+		</div>
+	</footer>
+
+	</div>
+</div>
+
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(["setCustomVariable", 1, "Language", "EN", "page"]);
+	  _paq.push(["setDomains", ["*.www.ece.de","*.www.ece.com"]]);
+	  _paq.push(["trackPageView"]);
+	  _paq.push(["enableLinkTracking"]);
+	  	(function() {
+			var u="https://piwik.ece.de/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '3']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  	})();
+	</script>
+	<noscript><p><img src="https://piwik.ece.de/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+
+
+
+
+</body>
+</html>

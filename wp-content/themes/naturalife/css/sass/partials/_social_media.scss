@@ -1,0 +1,259 @@
+/* ==========================================================================
+   SOCIAL MEDIA ICONS
+   ========================================================================== */
+
+	ul.social_media{
+		margin: 0;
+		padding: 0;		
+		list-style: none;
+		position: relative;
+		display: inline-block; 
+		vertical-align: middle; 
+		line-height: 1;
+		margin: 0 -4px;
+
+		li{
+			float: left;
+			margin: 0 4px;
+			position: relative;
+			line-height: 1;
+			padding: 0;
+		}
+
+		span{
+			display: none;
+			color: #fff !important;	
+		}			
+
+		a{
+			text-decoration: none;
+		}
+	}
+
+	ul.social_media:not(.staff){
+
+		li{
+			margin: 2px 4px; 
+		}
+
+		a > span{ 
+			min-width: 200px;
+			padding: 10px;
+			position: absolute;	
+			left: -85px;
+			bottom: 5em;
+			line-height: 1em;
+			border-radius: 20px;
+			text-align: center;
+			@include transform( scale(0) ); 
+			@include backface-visibility(hidden);
+			@include transition( bottom 0.3s ease-out );
+			visibility: hidden;
+			display: block;
+		}
+ 
+		a{
+			display: block;
+			padding: 0;
+			text-decoration: none;
+			z-index: 3;
+			position: relative;
+
+			&:before{
+				line-height: 2.5em;
+				width: calc( 2.5em + 2px);				
+				text-indent: 1px;
+				margin: auto;	
+				font-size: 1em; 
+				border-radius: 50%;  
+				@include transition( all .3s ease-out ); 
+			}
+		}
+
+		li:hover{
+			
+			a{
+				color: inherit !important;
+			}
+
+			a:before{ 
+				text-decoration: none;		
+				color: #fff !important;		
+			}		
+		}			
+		 
+		$social_media_list: ( 
+			("facebook", #3B5998), 
+			("twitter", #10c0ee), 
+			("gplus", #e3614a),
+			("flickr", #ff3092),
+			("mail", #999),
+			("lastfm", #da260e),
+			("dribbble", #EA4C89),			
+			("linkedin", #006e99),
+			("vimeo", #0ec4ef),
+			("youtube-play", #f3554f),
+			("instagram", #7b6455),
+			("behance", #228cff),
+			("dropbox", #499dd6),
+			("picasa", #aa7bbc),
+			("rss", #fd8900),
+			("skype", #00b0e1),
+			("stumbleupon", #6cc977),
+			("pinterest", #d62930),
+			("github", #888),
+			("tumblr", #456885),
+			("spotify", #afd102),
+			("evernote", #6fbd45),
+			("flattr", #f7af30),
+			("paypal", #003f70),
+			("vkontakte", #2f6893),
+			("soundcloud", #F76700),
+			("foursquare", "rgb(36,178,237)"),
+			("delicious", "rgb(51,153,255)"), 
+			("forrst", "rgb(90,153,103)"), 	
+			("ebay", "rgb(221,59,74)"), 
+			("android", "rgb(128,189,1)"), 		
+			("xing", "rgb(210,214,0)"), 
+			("reddit", "rgb(255,69,0)"), 
+			("digg", "rgb(0,0,0)"), 
+			("macstore", "rgb(27,189,251)"), 
+			("myspace", "rgb(9,17,164)"), 
+			("amazon", "rgb(245,147,24)"), 
+			("stackoverflow", "rgb(254,122,21)"), 
+			("slideshare", #0479B6),
+			("whatsapp", #2db742),
+			("telegram", #2ea5de),
+			("odnoklassniki", #f58221),			 
+		);
+
+		@each $item in $social_media_list {
+			$selector : nth($item, 1);
+			$color : nth($item, 2);
+
+			.#{$selector}:hover a:before, .#{$selector} span{
+				background: $color !important;
+				border-color: $color !important;
+			}
+		}
+	}
+
+	//multiline
+	ul.social_media.multiline-list{
+
+		a:before{
+			margin-right: 5px;
+			font-size: 0.875em;
+		}
+
+		li {
+			margin: 0 0 10px 0;
+			float: none;
+		}		
+	}
+
+	//footer info bar
+	.footer-info-right ul.social_media{
+
+		a:before{
+			font-size: 1em;
+		}
+
+		li:hover a > span{ 
+			bottom: calc(3em + 10px);
+			@include transform( scale(1) );
+			@include transition( bottom 0.3s ease-out );
+			@include backface-visibility(hidden);
+			visibility: visible;
+		}				
+	}
+	
+	//top bar
+	.top-bar-inner, .top-header{
+		ul.social_media a:before{
+			line-height: 2em;
+			width: 2em;
+			border: 0;
+		}
+	}
+
+
+/* Social Share
+   ========================================================================== */
+	.social_share{
+		display: block;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		text-align: center;  
+		font-size: 1em;
+		white-space: pre;
+
+		span > span{
+			display: none;
+			margin-left: 1em;
+			letter-spacing: 0.5em;
+			font-size: 0.875em;			
+		}
+
+		> span:hover span{
+			display: inline-block;
+		}
+    
+		ul{
+			display: none;
+		}
+	}
+
+	//icons
+	.naturalife-share-content{
+		text-align: center;
+
+		ul{
+			font-size: 22px;
+			margin: 0;
+			padding: 0;
+		}
+
+		li{
+			list-style: none;
+			display: inline;
+
+			a{
+				text-decoration: none;
+				color: #585858;
+				transition: all .5s ease;
+				position: relative;
+				border: 3px solid transparent;
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
+				display: inline-block;
+				line-height: 60px;
+				margin: 10px;
+				box-sizing: content-box;
+				top: 0;
+
+				&:hover{
+					transition: all .2s ease;
+					border-color: var(--primary-color);
+					color: var(--primary-color);
+					top: -3px;
+
+					span{
+						display: inline-block;
+						position: absolute;
+						margin-top: 60px;
+						width: 200px;
+						text-align: center;
+						margin-left: -115px;						
+					}
+				}
+			}
+
+			span{
+				display: none;
+			}
+		}		
+ 	
+	}

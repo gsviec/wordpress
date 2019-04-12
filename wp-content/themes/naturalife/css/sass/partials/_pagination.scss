@@ -1,0 +1,78 @@
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+	.paging_wrapper{
+		text-align:center;
+		display:block;
+		clear:both;
+
+		> .page-numbers {
+			display:inline-table; 
+			margin:0;
+			padding: 0 10px;
+			position:relative;
+			list-style-type:none;  
+			overflow: hidden;   
+
+			li{
+				display:inline; 
+				float:left; 		
+			}
+
+			a, li > span{				
+				overflow:hidden;
+				line-height: 300%;
+				display:block;
+				text-align:center;
+				text-decoration:none; 
+				padding: 0 10px;		 
+				//font-size: 0.875em;
+			}
+		 
+			li:last-child a, li:last-child > span {
+				border-width:0;  
+			}
+
+		 	.prev, .next{
+				position: relative;
+
+				&:before{
+					content: "";
+					position: absolute;
+					width: 50px;
+					top: 50%;
+					height: 1px; 
+					border-width: 1px 0 0 0;
+					border-style: solid; 
+				}
+		 	}
+
+		 	.prev{
+		 		padding: 0 80px 0 0;
+		 		margin-right: 20px;
+
+		 		&:before{
+		 			right: 0;
+		 		}
+		 	}
+
+		 	.next{
+		 		padding: 0 0 0 80px;
+		 		margin-left: 20px;
+
+		 		&:before{
+		 			left: 0;
+		 		}
+		 	}
+
+			.current, .dots{
+				text-decoration:none;  
+			} 	
+
+
+			a:hover, .current{
+				text-decoration:none;  
+			}
+
+		}
+	}

@@ -1,0 +1,145 @@
+/* ==========================================================================
+   TESTIMONIALS
+   ========================================================================== */
+
+	.testimonial{	
+		&.col-md-12{
+			font-size: 16px;
+		}	
+	}
+
+	.testimonial.col{
+		margin-bottom: 30px;
+	}
+
+	//title
+	.testimonial h6{
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+
+	.testimonial .text{
+		position: relative;
+
+		> *{
+			position: relative;
+			z-index: 2;
+		}
+
+	} 
+	/* quotes */ 
+	.testimonial .text{
+		overflow: hidden;
+		margin-bottom: 20px; 
+
+		.quote{
+			z-index: 1;
+			font-size: 140px; 
+			margin-bottom: -70px;
+			position: relative;
+			display: block; 
+			opacity: 0.3;
+			line-height: 1em;
+		}
+	}
+
+	/* client image */
+	.testimonial.has-image .client-image{
+
+		margin-bottom: 10px;
+		width: 80px;
+		height: 80px; 
+		border-radius: 50%;  
+		vertical-align: middle;
+		display: inline-block; 
+
+
+		img {
+			border-radius: 50%;
+			display: block;
+			overflow: hidden;
+			width: 100px;
+			transform-style: initial;
+			margin: auto;
+		}			
+	}
+
+	/* client info */
+	.client-info{
+		vertical-align: middle;
+		display: inline-block;
+		text-align: left;
+		margin: 0 10px;
+		font-size: 0.875em;
+		max-width: calc( 100% - 120px );
+
+		> span:not(:last-child):after{
+			content: " —";
+		}
+
+		h6{
+			margin-bottom: 2px;
+			margin-top: 0;
+			font-size: 1em;
+		}
+	 
+	}
+
+
+	/* testimonial left aligned text */
+	.testimonials.left{
+
+		.testimonial.has-image{
+			padding-bottom: 100px;
+		}
+
+		.testimonial.has-image .client-info{
+			float: left; 
+			margin: 25px 0 0 25px;
+			width: calc(100% - 125px);
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.testimonial.col-md-12{
+			padding: 0;
+		}	
+
+		.testimonial.has-image .client-image{
+			display: inline-block;
+			float: left; 		
+		}
+
+	}
+
+	/* testimonials centered */
+	.testimonials.center{
+		text-align: center;
+
+
+		.client-image{
+			margin-bottom: 10px;
+		}
+
+	}
+
+	// testimonials centered big text 
+	.testimonials.center.big{
+		
+		h6{
+			margin-top: 0;
+			font-size: 1.4em;
+		}
+
+		p{
+			font-size: 1.2em;
+			max-width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	//boxed
+	.testimonial.boxed{
+		height: 100%;
+	}

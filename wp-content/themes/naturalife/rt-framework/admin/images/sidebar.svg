@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>sidebar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="19" y="7" width="7" height="14"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sidebar">
+            <rect id="Rectangle" stroke="#909090" x="0.5" y="0.5" width="25" height="25"></rect>
+            <rect id="Rectangle-2-Copy" stroke="#909090" x="0.5" y="0.5" width="25.1940299" height="7"></rect>
+            <rect id="Rectangle-3-Copy" stroke="#909090" x="0.5" y="20.5" width="25" height="5"></rect>
+            <g id="Rectangle-3-Copy-2">
+                <use fill="#D1E4E7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#909090" stroke-width="1" x="19.5" y="7.5" width="6" height="13"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

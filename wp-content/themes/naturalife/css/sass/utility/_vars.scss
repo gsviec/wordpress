@@ -1,0 +1,80 @@
+//global vars
+$grid-gutter-width: 30px !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+$body-background-color: #d8dcde;
+$primary-font: Helvetica, sans-serif;
+$primary-font-color: #666; 
+
+//vars
+$content-row-max-width: 960;//px
+$content-row-max-width-2: 1260;//px 
+
+$rt-grid-gutter-width: 40px;
+		
+
+$logo_box_width:290px;
+$logo_box_height:150px;
+
+$logo_top_padding:20px;
+$logo_right_padding:0;
+$logo_bottom_padding:0;
+$logo_left_padding:0;
+
+
+$header_height: 110;
+
+$header_height_first_row: 75px;
+$header_height_second_row: 75px;
+$header_item_horizontal_padding: 24px;
+
+
+//menu variables 
+$nav_item_horizontal_padding: 20px;
+
+$sub_nav_item_top_padding: 10px;
+$sub_nav_item_bottom_padding: 10px;
+$sub_nav_item_horizontal_padding: 20px;
+
+$nav_item_background_color: #fff ;
+$nav_item_font_color: #555 ;
+$nav_item_border_color: #efefef ;
+$nav_item_indicator_color: #fff ;
+
+$nav_item_border_color_active: #efefef ;
+$nav_item_background_color_active: #fff ;
+$nav_item_font_color_active: #999999 ;
+$nav_item_indicator_color_active: #fff ;
+
+$sub_nav_item_background_color:#fff ;
+$sub_nav_item_font_color: #555 ;
+$sub_nav_item_border_color: #efefef;
+$sub_nav_item_indicator_color: #fff;
+
+$sub_nav_item_border_color_active: #efefef ;
+$sub_nav_item_background_color_active: #efefef;
+$sub_nav_item_font_color_active: #999;
+$sub_nav_item_indicator_color_active: #fff;
+
+
+ 
+//
+// RESPONSIVE VALUES
+//
+
+
+//Extra small devices Phones (<768px)
+$rt-xs: "screen and (max-width : 768px)";
+
+//Small devices Tablets (≥768px) 	
+$rt-sm: "screen and (min-width : 768px)";
+
+//Medium devices Desktops (≥992px) 	
+$rt-md: "screen and (min-width : 992px)";
+
+//Large devices Desktops (≥1200px)
+$rt-lg: "screen and (min-width : 1025px)";
+
+
+//Tablet Landscape and Smaller ( < 1024px)
+$rt-mobile-all: "screen and (max-width : 1024px)";

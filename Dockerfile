@@ -77,7 +77,7 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 VOLUME /var/www/html
 WORKDIR /var/www/html
-ADD . ./
+#ADD . ./
 #RUN sed -ri -e 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-enabled/000-default.conf
 
 ENTRYPOINT ["docker-entrypoint.sh"]

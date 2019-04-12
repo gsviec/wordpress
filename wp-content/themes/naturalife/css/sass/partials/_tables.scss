@@ -1,0 +1,102 @@
+/* ==========================================================================
+   TABLES
+   ==========================================================================  */
+
+
+/* Form Table
+	========================================================================== */	
+	#container table.form-table{
+		width: auto;
+		margin: auto;
+
+		tr > td{
+			border-width: 0;
+			padding-right: 20px;
+			padding-bottom: 10px;
+			vertical-align: middle;
+		}
+
+		tr > td:last-child{
+			padding-right: 0;
+		}
+
+		label{
+			margin: 0 10px;
+			min-width: 150px;
+			text-align: left;
+		}
+
+		td > label:first-child{
+			margin-left: 0;
+		}
+
+		.note-field{
+			height: 100px;
+			width: 100%;
+		}
+
+	}
+
+
+	.content table:not(.table){
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 10px;
+
+	  // Cells
+	  > thead,
+	  > tbody,
+	  > tfoot {
+	    > tr {
+	      > th,
+	      > td {
+	        padding: 5px;
+	        vertical-align: top;
+	        border-width: 1px 0 0 0;
+	        border-style: solid;
+	        //use color border-color;
+	      }
+	    }
+	  }		
+
+	  // Bottom align for column headings
+	  > thead > tr > th {
+	    vertical-align: bottom;
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        //use color border-color;
+	  }
+	  // Remove top border from thead by default
+	  > caption + thead,
+	  > colgroup + thead,
+	  > thead:first-child {
+	    > tr:first-child {
+	      > th,
+	      > td {
+	        border-top: 0;
+	      }
+	    }
+	  }
+
+	}	
+
+
+	.rt-simple-table{
+		margin-bottom: 0 !important;
+
+		thead{
+			font-weight: bold;
+		}	
+	} 
+
+	.table-clean{
+
+		thead td{
+			border-top: 0 !important;
+			padding-top: 0 !important;
+		}	
+
+		tbody tr:last-child td{
+			padding-bottom: 0 !important;
+		}
+	} 

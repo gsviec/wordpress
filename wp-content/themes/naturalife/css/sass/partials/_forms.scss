@@ -1,0 +1,513 @@
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+	button, input, optgroup, select, textarea {
+		color: inherit;
+		margin: 0; 
+	}
+
+	select{
+		// -webkit-appearance: none;	
+	}
+
+	:focus,button:focus{
+		outline: none;
+	}
+
+
+	.label, label{
+		//use color font-color;
+		//white-space: nowrap;
+	}
+
+	label.inline{
+		display: inline-block;
+		text-align: left; 
+	}
+
+	//all form items that needs to be styled	
+	input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]), 
+	textarea,
+	select,
+	body .select2-container--default .select2-selection--single
+	{
+		padding: 0.6em;
+		line-height: 1.4em;
+		border-width: 2px;
+		border-style: solid;	
+		background-color: transparent;
+		height: 2.8em;		
+		border-color: inherit;
+	}
+
+	input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]):focus, textarea:focus{
+		box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.10980392156862745);
+	}
+
+	select,form .customselect{
+		padding: 0.3em 0.6em;
+		-webkit-border-radius: 0;
+	}
+
+	body .select2-search input,
+	body .select2-container--default .select2-search--dropdown .select2-search__field {
+		border: 0;
+		background: rgba(0, 0, 0, 0.02);
+		box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.34); 
+		padding-left: 10px;
+		padding-right: 10px;
+		border-color: inherit;
+   }
+
+   body .select2-container .select2-selection--single .select2-selection__rendered{
+   		padding-left: 0
+   }
+   
+   body .select2-container--default .select2-results>.select2-results__options{
+		padding: 10px;
+		border-color: inherit;
+   }
+
+	body .select2-container--default .select2-selection--single .select2-selection__arrow {
+		top: 0.6em;
+		right: 10px;
+	}
+
+   body .select2-dropdown{
+ 		border-width: 2px;
+ 		border-radius: 0;
+ 		border-color: inherit;
+   }
+
+   body .select2-selection__rendered{
+   		line-height: 1.4em !important;
+   }
+
+	select.hasCustomSelect{		
+		-webkit-appearance: none;
+		-webkit-border-radius:0; 
+	}
+
+	body .select2-container--default .select2-selection--single .select2-selection__rendered {
+		color: inherit;
+	}
+
+	textarea{
+		line-height: 1.4em;
+		padding: 0.6em;
+		height: auto;
+	}
+
+
+	[type="submit"],
+	[type="button"]{
+		border-width: 0;
+		border-style: solid;	
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		z-index: 1;
+		padding: 0.6em 20px;
+		height: 2.8em;
+		border-radius:0;		
+		line-height: 1.6em;
+		font-weight: bold;
+		cursor: pointer;  
+	}
+
+	button[type="submit"]{
+		cursor: pointer;  	
+	}
+
+/* Forms in sidebars
+   ========================================================================== */
+   .widget form input,textarea,select{
+   	max-width: 100%;
+   }
+
+/* Contact Form (native) & RT-Forms
+   ========================================================================== */
+	.rt_form{		
+
+		input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]),
+		textarea,
+		select
+		{
+			padding: 0.7em; 
+			border-style: solid;	
+			background-color: transparent;
+			line-height: 100%;
+			height: 3em;
+			border-radius:10px;		
+		}
+
+		textarea{
+			line-height: 1.5em;
+			padding: 0.7em;
+			height: auto;
+		}
+		
+		input[type="submit"],
+		input[type="button"]{
+			border-radius:10px;	
+		}
+
+		> ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			> .form-input{
+				margin-bottom: 0.5em;
+			}
+
+			.security-question,
+			.submit-button{
+				float: left;
+				margin-right: 10px;
+			}
+
+			#name, #email, #message, .fullwidth{
+				width: 100%;
+			}
+
+			#math{
+				max-width: 65px;
+			}
+		}	
+
+		.error{
+			box-shadow: 0 0 0 2px red !important;
+		}
+
+		.loading{
+			background: url(../images/loading.gif) center center no-repeat;
+			display: none;
+			width: 40px;
+			height: 45px;
+			float: right;
+		}
+
+		#math{
+			border-width: 2px;
+			padding: 0.6em;
+			height: 2.8em;		
+			text-align: center;
+		}
+
+		.confirm-label{
+			margin-left: 10px;
+		}
+	}
+
+	//fullwidth
+	.rt_form.full-width-form{
+		input,textarea,select{
+			width: 100%;
+			margin: 10px 0;
+		}
+
+		.ajax-loader{
+			position: absolute;
+			margin-top: 1.6em;			
+		}
+
+		+ .wpcf7-response-output{
+			margin-top: 0 !important;
+		}
+	}
+
+/* Subscription Forms
+   ========================================================================== */
+
+   #container .subscription-form{
+		&.inline{
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+
+			input:not([type="submit"]){
+				width: calc(100% - 5px);
+			}
+
+			.col{
+				padding: 0 !important;
+			}
+		}
+
+		&.inline-2{
+
+		div{
+			position: relative;
+			display: inline-block;
+		}
+
+			.wpcf7-not-valid-tip{
+				position: absolute;
+				left: 10%;
+				text-align: left;
+			}
+
+			label{ 
+				padding: 0 15px;
+				font-weight: normal;
+			}
+
+			input[type="email"]{
+			max-width: 250px;
+			border-radius: 30px;
+			padding-left: 20px;
+			border-width: 0;
+			}
+
+			.icon-submit{
+			margin-left: -35px;
+			width: 28px;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			line-height: 28px;
+			top: 50%;
+			text-align: center;
+			transform: translateY(-50%);
+			cursor: pointer;
+			border-radius: 50%;
+			right: 7px;
+			color: #fff;
+
+			&:before{
+				width: auto;
+				margin: 0 0 0 2px;
+			}
+			}
+
+		.ajax-loader{
+			position: absolute;
+			right: -26px;
+			top: 10px;
+		}
+		}
+
+		&.rounded{
+
+		position: relative;
+		display: inline-table;
+
+			> *{
+				display: table-cell;
+		}
+
+		> span:first-child input{
+			border-radius: 40px 0 0 40px;
+			padding-left: 30px;
+			border-width: 2px 0 2px 2px;
+			width: 100% !important;
+			max-width: 100%;
+		}
+
+		> span:nth-child(2) input{
+			border-width: 2px 0 2px 2px;
+			width: 100% !important;
+			max-width: 100%;
+		}
+
+		input[type="submit"]{
+			border-radius: 0 40px 40px 0;
+			padding-left: 20px; 
+			padding-right: 30px;
+			text-align: left;
+		}
+
+			.ajax-loader{
+			position: absolute;
+			right: -26px;
+			top: 10px;
+		}
+
+		.wpcf7-not-valid-tip{
+			text-align: center;
+		}
+		}
+
+		&.nogaps{
+			input{
+				width: 100% !important;
+			}   		
+
+			.ajax-loader{
+				position: absolute;
+			}
+		}
+
+		p{
+			margin-bottom: 10px;
+		}
+	}
+ 
+
+/* Contact Form 7 (plugin)
+   ========================================================================== */
+	.wpcf7{
+		input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]), 
+		textarea,
+		select{
+			max-width: 100%;
+		}
+
+		.wpcf7-list-item.first,
+		.wpcf7-response-output{
+			margin-left: 0;
+		}
+
+		.form-table .wpcf7-form-control-wrap{
+			display: inline-block;
+		}
+
+		.wpcf7-form-control-wrap.notes{
+			display: block;
+		}
+
+		.wpcf7-response-output{
+			@include icon("\e812");
+			clear: both;
+			border-width: 0;
+			padding: 10px 0; 
+			margin-left: 50px;
+			position: relative;
+
+			&:before{
+				border-radius: 50%;
+				color: #fff;
+				display: inline-block;
+				font-family: fontello;
+				font-size: 20px;
+				height: 40px;
+				line-height: 40px;
+				margin-right: 10px;
+				text-align: center;
+				vertical-align: middle;
+				width: 40px;	
+				position: absolute;
+				left: -50px;
+				top: 0;			
+			}
+		}
+
+		.rt_form + .wpcf7-response-output{
+			margin-top: 80px;
+		}
+
+		div.wpcf7-mail-sent-ok:before {
+			background-color: #398f14;
+		}
+
+		div.wpcf7-mail-sent-ng:before {
+			background-color: #ff0000;
+			content: "\e811";
+		}
+
+		div.wpcf7-spam-blocked:before {
+			content: "\2715";		
+			background-color: #ffa500;				
+		}
+
+		div.wpcf7-validation-errors:before {
+			content: "\261e";
+			background-color: #f7b400; 			
+		}
+
+		img.ajax-loader{
+			display: inline-block;
+		}
+
+		span.wpcf7-not-valid-tip {
+			font-family: "Courier"," monospace";
+			font-size: 11px;
+		}		
+
+		//loader
+		.ajax-loader{
+			background-image: url(../images/preloader.gif) !important;
+		}
+
+
+		.rt_form label{		
+			display: block;
+		}
+	}
+
+
+/* Gravity Forms (plugin)
+   ========================================================================== */
+	.gform_wrapper div{
+		input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]), 
+		input.medium
+		{	
+			margin: 0;
+			padding: 5px 10px;
+			font-size: $font-size-base;
+		}
+
+		select[multiple],
+		select[size] {
+			margin: 0 !important;
+			padding: 10px;
+			font-size: $font-size-base;
+		}
+
+		textarea{
+			margin: 0;
+			line-height: 1.4em;
+			padding: 11px 10px;
+			font-size: $font-size-base;
+		}
+
+		.ginput_container label{
+			text-align: left;
+		}
+
+		.gfield_label{
+			text-align: left;
+		}
+	}
+
+/* Ninja Forms
+   ========================================================================== */
+   .ninja-forms-form{
+		.label-above label{
+			text-align: left;
+		}
+
+		.ninja-forms-field-error{
+			color: red;
+		}   	
+   }
+
+	//date picker field
+	#container .rt-date-picker{ 
+		width: 80px;    
+	}
+
+
+	#container .rt-date-icon{
+		display: inline-block;
+
+		@include icon("\e8bb");
+			&:before{
+				float: right;
+				top: calc(50% - 6px);
+				left: 10px;
+				position: absolute;
+			}
+			position: relative;
+		.rt-date-picker{
+			width: 130px;
+			padding-left: 30px;
+
+			&.native{
+				width: 175px;
+				padding-left: 30px;			
+			}
+		}		
+	}

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+	body{
+		line-height: 1.6;   	
+	}
+
+	p{
+		margin-bottom: 20px;   	
+	}
+
+/* Links
+   ========================================================================== */
+	a{
+		text-decoration: underline;
+	} 
+
+	a:hover{
+		text-decoration: none;
+	}
+
+/* Headings
+   ========================================================================== */
+	h1,h2,h3,h4,h5,h6{ 
+		margin-top: 40px;
+		margin-bottom: 20px; 
+		line-height: 1.2;
+	}
+
+
+	/*	heading colors and links  */
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+		text-decoration:underline;
+	}
+
+	h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{ 
+		@include transition(color 0.4s ease 0s);
+	}
+
+	/* heading with body fonts */
+	.clean_heading{
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing:antialiased;
+		text-rendering: optimizelegibility;	
+	}

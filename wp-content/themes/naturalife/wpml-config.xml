@@ -1,0 +1,113 @@
+<wpml-config> 
+    <custom-types>
+        <custom-type translate="1">portfolio</custom-type>
+        <custom-type translate="1">staff</custom-type>
+        <custom-type translate="1">testimonial</custom-type>         
+	</custom-types>    
+
+	<taxonomies>
+		<taxonomy translate="1">portfolio_categories</taxonomy>
+		<taxonomy translate="1">testimonial_categories</taxonomy>
+	</taxonomies>
+
+	<admin-texts>
+		<key name="theme_mods_naturalife">
+			<key name='naturalife_staff_page' /> 
+			<key name='naturalife_portf_page' /> 
+			<key name='naturalife_blog_page' /> 
+			<key name='naturalife_shop_start_page' /> 
+			<key name='naturalife_rss' />
+			<key name='naturalife_rss_text' />
+			<key name='naturalife_mail' />
+			<key name='naturalife_mail_text' />
+			<key name='naturalife_twitter' />
+			<key name='naturalife_twitter_text' />
+			<key name='naturalife_facebook' />
+			<key name='naturalife_facebook_text' />
+			<key name='naturalife_flickr' />
+			<key name='naturalife_flickr_text' />
+			<key name='naturalife_gplus' />
+			<key name='naturalife_gplus_text' />
+			<key name='naturalife_pinterest' />
+			<key name='naturalife_pinterest_text' />
+			<key name='naturalife_tumblr' />
+			<key name='naturalife_tumblr_text' />
+			<key name='naturalife_linkedin' />
+			<key name='naturalife_linkedin_text' />
+			<key name='naturalife_dribbble' />
+			<key name='naturalife_dribbble_text' />
+			<key name='naturalife_skype' />
+			<key name='naturalife_skype_text' />
+			<key name='naturalife_behance' />
+			<key name='naturalife_behance_text' />
+			<key name='naturalife_github' />
+			<key name='naturalife_github_text' />
+			<key name='naturalife_vimeo' />
+			<key name='naturalife_vimeo_text' />
+			<key name='naturalife_stumbleupon' />
+			<key name='naturalife_stumbleupon_text' />
+			<key name='naturalife_lastfm' />
+			<key name='naturalife_lastfm_text' />
+			<key name='naturalife_spotify' />
+			<key name='naturalife_spotify_text' />
+			<key name='naturalife_instagram' />
+			<key name='naturalife_instagram_text' />
+			<key name='naturalife_dropbox' />
+			<key name='naturalife_dropbox_text' />
+			<key name='naturalife_evernote' />
+			<key name='naturalife_evernote_text' />
+			<key name='naturalife_flattr' />
+			<key name='naturalife_flattr_text' />
+			<key name='naturalife_paypal' />
+			<key name='naturalife_paypal_text' />
+			<key name='naturalife_picasa' />
+			<key name='naturalife_picasa_text' />
+			<key name='naturalife_vkontakte' />
+			<key name='naturalife_vkontakte_text' />
+			<key name='naturalife_youtube-play' />
+			<key name='naturalife_youtube-play_text' />
+			<key name='naturalife_soundcloud' />
+			<key name='naturalife_soundcloud_text' />
+			<key name='naturalife_foursquare' />
+			<key name='naturalife_foursquare_text' />
+			<key name='naturalife_delicious' />
+			<key name='naturalife_delicious_text' />
+			<key name='naturalife_forrst' />
+			<key name='naturalife_forrst_text' />
+			<key name='naturalife_ebay' />
+			<key name='naturalife_ebay_text' />
+			<key name='naturalife_android' />
+			<key name='naturalife_android_text' />
+			<key name='naturalife_xing' />
+			<key name='naturalife_xing_text' />
+			<key name='naturalife_reddit' />
+			<key name='naturalife_reddit_text' />
+			<key name='naturalife_digg' />
+			<key name='naturalife_digg_text' />
+			<key name='naturalife_macstore' />
+			<key name='naturalife_macstore_text' />
+			<key name='naturalife_myspace' />
+			<key name='naturalife_myspace_text' />
+			<key name='naturalife_stackoverflow' />
+			<key name='naturalife_stackoverflow_text' />
+			<key name='naturalife_slideshare' />
+			<key name='naturalife_slideshare_text' />
+			<key name='naturalife_sina-weibo' />
+			<key name='naturalife_sina-weibo_text' /> 
+			<key name='naturalife_copyright' />
+			<key name='naturalife_logo_dark' />
+			<key name='naturalife_sticky_logo_dark' />
+			<key name='naturalife_mobile_logo_dark' />
+			<key name='naturalife_retina_logo_dark' />
+			<key name='naturalife_retina_sticky_logo_dark' />
+			<key name='naturalife_retina_mobile_logo_dark' />
+			<key name='naturalife_logo_light' />
+			<key name='naturalife_sticky_logo_light' />
+			<key name='naturalife_mobile_logo_light' />
+			<key name='naturalife_retina_logo_light' />
+			<key name='naturalife_retina_sticky_logo_light' />
+			<key name='naturalife_retina_mobile_logo_light' />
+		</key>
+	</admin-texts>  
+	
+</wpml-config>

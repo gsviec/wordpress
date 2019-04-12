@@ -1,0 +1,107 @@
+/* ==========================================================================
+   TEAM
+   ========================================================================== */
+
+	.type-staff.loop{	
+
+		text-align: center;	
+		
+		.person_image{
+			position: relative;
+			display: block;
+			max-width: 100%;
+			width: 100%;
+			margin: 0 auto 20px;
+			overflow: hidden;
+			will-change: border-radius;
+			border-radius: 0;
+
+			&.bw-effect img{
+				filter: grayscale(1);
+				transition: filter .4s ease;
+			}
+		}
+
+		&:hover .person_image img{
+			filter: none;
+			transition: filter .4s ease;
+		}
+
+		.person_name{
+			margin: 0;
+			line-height: 1em;
+			padding-bottom: 0.25em;
+
+			a{
+				text-decoration: none;
+			}
+
+			a:hover{
+				text-decoration: none;
+				opacity: 0.7;
+			}
+
+		}
+
+		.profile{
+			margin-top: 15px;
+			> p:last-child{
+				margin-bottom: 0;
+			}
+		}
+
+		.position{
+			margin-top: 5px;
+		}
+
+		.person_links_wrapper{
+			line-height: 1em;
+		}
+
+		.person_image .person_links_wrapper{
+			position: absolute;
+			width: 100%;
+			bottom: -100%;
+			transition: bottom .3s ease;
+			padding: 10px;
+
+			li a{
+				color: #fff;	
+				transition: opacity .3s ease;
+				display: block;
+
+				&:hover{
+					opacity: 0.5;
+				}		
+			}
+		}
+
+		&:hover .person_image .person_links_wrapper{
+			bottom: 0;
+		}
+
+		.person_data  .person_links_wrapper{
+			margin-top: 20px;
+			padding: 10px 0 0;
+			border-style: solid;
+			border-width: 1px 0 0 0;	 
+		}
+
+
+ 
+	}
+
+	.type-staff.single{
+		.person_links_wrapper{
+			margin-top: 10px;
+			text-align: center;
+		}
+	}
+
+	.boxed_columns .loop.staff{
+		padding: 20px;
+	}
+
+	.team > .row{
+		margin-bottom: 40px;
+	}

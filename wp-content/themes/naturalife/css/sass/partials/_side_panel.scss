@@ -1,0 +1,378 @@
+/* ==========================================================================
+   SIDE PANEL
+   ========================================================================== */
+	.naturalife-panel-holder, .naturalife-panel-background{
+		width: 400px;
+		bottom: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		
+		overflow-y: hidden;
+		backface-visibility: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.naturalife-panel-holder{
+		z-index: 520;
+		.ps-scrollbar-y-rail{
+			display: none;
+		}
+	}
+
+	.naturalife-panel-background{
+		z-index: 510;
+	}
+
+	.naturalife-panel-wrapper{
+		padding: 30px 50px;
+		height: 100%;
+		width: 100%;
+		display: table;
+
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.naturalife-panel-widgets{
+		display: inline-block;
+
+		.widget > h5{ 
+			font-weight: bold;
+		}					
+	}
+
+	.naturalife-panel-contents{
+		margin-bottom: -40px;
+	}
+
+	.naturalife-panel-contents > *
+	{
+		display: none;
+		opacity: 0;
+		top:20px;
+		position: relative;
+		max-width: 300px;
+	}
+
+	.naturalife-panel-contents > .animate{
+		margin-bottom: 40px;
+
+		> *:not(:last-child){
+			margin-bottom: 40px;
+		}
+	}
+
+	.naturalife-panel-contents .widgettitle, .naturalife-panel-contents .widget h5{
+		margin: 0 0 40px;
+		position: relative;		
+
+		&:after{
+			content: "";
+			position: absolute;
+			height: 3px;
+			width: 100%;
+			left: 0;
+			bottom: -17px;			
+		}
+	}
+
+	.admin-bar 	.naturalife-panel-wrapper{
+		padding-top: 62px;
+	}
+
+	/* panel open close animation  */
+	.naturalife-panel-holder, .naturalife-panel-background{
+		@include transform(translateX(400px));
+		@include transition( transform 0.3s ease-out 0.4s );
+		backface-visibility: hidden; 
+	}
+
+	.naturalife-panel-on{
+
+		.naturalife-panel-holder, .naturalife-panel-background{
+			@include transform(translateX(0));
+			@include transition( transform 0.3s linear 0.4s );
+			backface-visibility: hidden; 
+		}
+
+		.naturalife-panel-close {
+			@include transition( transform 0.3s linear 0.8s );
+			@include transform(scale(1));
+		}
+	}
+ 
+	.naturalife-panel-close {
+		position: fixed;
+		color: #9a9a9a;
+		z-index: 99999;
+		right: 420px; 
+		font-size: 14px;
+		border-radius: 50%;
+		top: 20px;
+		@include transform(scale(0));
+		@include transition( transform 0.3s linear 0s );
+		cursor: pointer;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		padding: 0;
+	}
+
+	.admin-bar .naturalife-panel-close{
+		top: 52px;
+	}
+
+/* Mini Cart
+	========================================================================== */
+	.naturalife-panel-contents > .widget_shopping_cart{
+		.cart_list li{
+			border-style: solid;
+			border-width: 0 0 1px 0;
+			padding: 20px 0 20px 54px;
+		}
+
+		.total{
+			padding: 30px 0 !important;
+		}
+
+		.cart_list li.empty{
+			padding: 20px 0;
+			border: none;
+		}
+	}
+		
+
+/* Login
+	========================================================================== */
+	.naturalife-panel-contents > .widget.rt_woocommerce_login{
+		.form-row > label {
+			display: block;
+			text-align: left;
+			font-weight: inherit;
+		}
+
+		.input-text, .button{
+			width: 100%;
+		}
+
+		form.login{
+			padding: 0;
+			border-width: 0;
+		}
+	}
+
+/* ==========================================================================
+   PANEL NAVIGATION 
+   ========================================================================== */
+
+	.naturalife-panel-contents .menu{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		> li{
+			float: none;
+			display: block;
+		}
+
+		a > sub {
+			display: block;
+			font-size: 11px;
+			font-style: oblique;		
+			padding: 5px 0;	
+		}
+
+		li a, li > span{
+			position: relative;
+			display: block;
+			text-align: left;
+			border-width: 0 0 1px 0; 
+			padding: 10px 0;
+			text-decoration: none;
+			border-style: solid;
+			line-height: 1.8 !important;
+		}
+
+		ul li a, ul li > span {
+			border-style: solid;
+			border-width: 0 0 1px; 
+		}
+
+		> li > a:after, li span:after {
+			background-color: transparent;
+		}
+
+		// sub menus
+		ul{
+			list-style: none;
+			display: none;
+			position: relative;
+			right: 0;
+			width: 100%; 
+			margin: 0;
+			padding: 0;
+			border-width: 0;
+		}
+
+		ul ul{
+			border-width: 0;
+		}
+
+		> li > ul{
+			margin: 0;
+		}
+
+		ul li:first-child a, ul li:first-child > span{
+			border-width: 0 0 1px 0;
+		}
+
+		li:hover > ul		
+		{
+			display: none;
+		}
+
+		li.menu-item-has-children
+		{
+			> a, > span {
+				padding-right: 65px;
+				@include icon("\e802");
+				position: relative;
+			}											
+			
+			&.current-menu-item > a, &.current-menu-item > span{
+				@include icon("\e801");
+			}
+
+			> a:before, > span:before{
+				cursor: pointer;
+				margin: -5px 0 0 0;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				text-align: left;
+				width: auto;
+				z-index: 999;
+				margin: -6px 0 0 0 !important; 
+				line-height: 1;
+				font-size: 12px;
+				width: auto !important;
+			}
+		}
+
+
+		li.current-menu-item
+		{										
+			> ul{
+				display: block;	
+			}										
+		}
+
+		// indicator
+		li.current-menu-ancestor:after,
+		li.current-menu-item:after,
+		li:hover:after,
+		li:after{						
+			content: none;
+		} 
+
+		//sub menu paddings
+		li li a{
+			padding-left: 15px;
+		}
+
+		li li li a{
+			padding-left: 25px;
+		}
+
+		li li li li a{
+			padding-left: 35px;
+		}
+
+		li li li li a{
+			padding-left: 45px;
+		}
+
+		li li li li li a{
+			padding-left: 50px;
+		}
+
+		li li li li li li a{
+			padding-left: 60px;
+		}
+
+		li li li li li li li a{
+			padding-left: 70px;
+		}
+
+	} 
+
+	.naturalife-panel-contents .naturalife-language-switcher > .menu > li{
+			> a:before{
+				content: "\f0ec" !important; 
+				font-size: 1.2em;
+				top: auto !important;
+				margin: auto !important;
+			}
+	}
+
+/*  Small screens
+	========================================================================== */
+	@media screen and (max-width: 1024px) {
+			.naturalife-panel-holder{ 
+				overflow: auto;
+				height: auto; 
+			}
+
+			.naturalife-panel-on{
+				overflow: hidden;
+			}
+
+			#container{ 
+				-webkit-overflow-scrolling: touch;														
+			}
+
+			.naturalife-panel-on{
+				-webkit-overflow-scrolling: touch;
+			}
+		
+			.side-panel-widgets-desktop{
+				display: none !important;
+			}
+	}
+
+	@media screen and (min-width: 1025px) {
+			.side-panel-widgets-mobile, .mobile-nav, .naturalife-panel-contents .naturalife-language-switcher{
+				display: none !important;
+			}
+			.naturalife-panel-close{
+				display: none;
+			}
+	}
+
+	@media screen and (max-width: 768px) {
+		.admin-bar .naturalife-panel-close{
+			top: 66px;
+		}
+	}
+
+	@media screen and (max-width: 425px) {
+
+		//side panel
+		.naturalife-panel-holder, .naturalife-panel-background{
+			width: 280px;
+			@include transform(translateX(280px)); 
+		} 
+
+		.naturalife-panel-wrapper{
+			padding: 30px;
+		}
+
+		.naturalife-panel-close {
+			right: 285px;
+		}
+
+	}
