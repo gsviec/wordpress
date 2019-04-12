@@ -70,7 +70,7 @@ RUN set -xe && \
 RUN curl https://dl-ssl.google.com/dl/linux/direct/mod-pagespeed-stable_current_amd64.deb --output pagespeed.deb && \
     dpkg -i pagespeed.deb && rm pagespeed.deb
 
-#COPY docker-phalcon-* /usr/local/bin/
+COPY php.ini /usr/local/etc/php/
 RUN docker-php-ext-install pcntl
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
