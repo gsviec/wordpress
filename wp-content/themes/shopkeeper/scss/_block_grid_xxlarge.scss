@@ -1,0 +1,11 @@
+@for $i from 1 through $block-grid-elements {
+
+  @media #{$xxlarge-up} {
+    .xxlarge-block-grid-#{$i} {
+      @include block-grid(
+        $per-row: $i
+      );
+    }
+  }
+  
+}

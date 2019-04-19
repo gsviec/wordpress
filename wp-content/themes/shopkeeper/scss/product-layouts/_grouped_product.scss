@@ -1,0 +1,133 @@
+//==============================================================================
+// All Product Layouts / Grouped Product
+//==============================================================================
+
+.group_table
+{
+    tr 
+    {
+        td 
+        {
+            font-size: 1rem;
+            padding-bottom: 13px !important;
+            padding-top: 13px !important;
+            text-align: left;
+            white-space: nowrap;
+            vertical-align: middle !important;
+            
+            .quantity
+            {
+                margin: 0 20px 0 0 !important;
+                
+                &.custom
+                {
+                    @media screen and (max-width: 1024px) 
+                    {
+                        margin-right: 10px !important;
+
+                        input.custom-qty,
+                        input.default-qty
+                        {
+                           width: 25px; 
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &:first-child td 
+        {
+            padding-top: 5px !important;
+        }
+
+        &:last-child td 
+        {
+            border-bottom: none;
+        }
+       
+    }
+
+    td.woocommerce-grouped-product-list-item__quantity
+    {
+        .wc-grouped-product-add-to-cart-checkbox
+        {
+            transform: scale(1) !important;
+            width: 35px !important;
+            height: 35px;
+            outline: 0;
+        }
+
+        a.button
+        {
+            min-width: 120px !important;
+            margin-right: 22px !important;
+
+            &:hover
+            {
+                color: #fff;
+            }
+        }
+    }
+    
+    td.woocommerce-grouped-product-list-item__label 
+    {
+        display: table-cell;
+        cursor: default !important;
+        color: #333;
+        
+        @media screen and (max-width: 1024px) 
+        {
+            padding-left: 10px !important;
+            padding-right: 10px !important;  
+        }
+        
+        label 
+        {
+            margin-top: -5px;
+            cursor: default !important;
+            padding-right: 0;
+           
+            a
+            {
+                @media screen and (max-width: 1024px) 
+                {
+                    font-size: 13px !important; 
+
+                }
+            }
+        }
+    }
+
+    td.woocommerce-grouped-product-list-item__price
+    {
+        
+        @media screen and (max-width: 1024px) 
+        {
+            font-size: 13px !important; 
+            text-align: right;
+
+        }
+    }
+
+    label
+    {
+        a
+        {
+            font-size: 1rem;
+            line-height: 1.3125rem;
+            font-weight: 700;
+            white-space: normal;
+            text-transform: capitalize;
+        }
+    }
+
+    del
+    {
+        .amount
+        {
+            margin-right: 5px;
+        }
+    }
+
+}

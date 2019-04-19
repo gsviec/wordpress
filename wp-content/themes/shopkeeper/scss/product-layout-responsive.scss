@@ -1,0 +1,22 @@
+.mobile_gallery,
+.mobile_gallery_thumbs
+{
+    display: none !important;
+    
+    @media (max-width: 1023px)
+    {
+        display: block !important;
+    }
+}
+
+.product_layout_2 .product_content_wrapper .product-images-wrapper .product-images-style-2,
+.product_layout_3 .product_content_wrapper .product-images-wrapper .product-images-style-3,
+.product_layout_4 .product_content_wrapper .product-images-wrapper .product-images-style-4
+{
+    display: block !important;
+    
+    @media (max-width: 1023px)
+    {
+        display: none !important;
+    }
+}
